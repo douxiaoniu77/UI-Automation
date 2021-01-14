@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="dashboardApp" ng-controller="dashboardController">
+			<h1>Launch E2E Operations</h1>
+			<a href="index.html">Back to Dashboard</a>
+
+			<!-- DEBUG: SERVICE LIST SECTION -->
+			<div class="testsuite_section" class="testsuite_table">
+				<table>
+					<tr class="testsuite_table">
+						<th>Tenancy Name</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr class="testsuite_table">
+						<th>Email</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr class="testsuite_table">
+						<th>Operation</th>
+						<td> <select>
+							<option value="operation_name">Onboarding</option>
+							<option value="operation_name">Suspend (Quota)</option>
+							<option value="operation_name">Resume (Quota)</option>
+							<option value="operation_name">Suspend (Fraud)</option>
+							<option value="operation_name">Resume (Fraud)</option>
+							<option value="operation_name">Termination</option>
+						</select>
+						</td>
+					</tr>
+					<tr class="testsuite_table">
+						<th></th>
+						<td><button>Launch</button></td>
+					</tr>
+				</table>
+			</div>
+
+	</body>
+</html>

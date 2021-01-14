@@ -1,0 +1,5 @@
+{
+    "create_dns": true,
+    "send_queries": true,
+    "terminate_dns": true
+}

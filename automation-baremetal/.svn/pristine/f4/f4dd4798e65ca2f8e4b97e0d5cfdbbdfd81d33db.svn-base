@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_APIKeySetup">
+	<parameter name="cloudAdmurl" value="" />
+	<test name="BareMetal_Console_APIKeySetup"
+			preserve-order="true">
+		<classes>
+			<class name="com.oracle.opc.automation.test.testcase.test.OCIConsolePreRequisite">
+				<methods>
+				   <include name="ociFederationLogin"/>
+				   <include name="ociConfigureApiAccount"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

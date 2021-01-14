@@ -1,0 +1,306 @@
+##BareMetal
+bmc.current.password=XPATH|//*[@id="currentPassword"]
+bmc.new.password=XPATH|//*[@id="newPassword"]
+bmc.confirm.password=XPATH|//*[@id="confirmPassword"]
+bmc.save.password=XPATH|/html/body/div[1]/div[3]/div[3]/form/fieldset/div[4]/input
+
+#BMC
+
+bmc.login.continue=XPATH|//a[contains(., 'Continue')]
+bmc.login.username=XPATH|//*[@id="username"]
+bmc.login.password=XPATH|//*[@id="password"]
+bmc.login.signin=XPATH|/html/body/div[1]/div[3]/table/tbody/tr[3]/td/form/div[3]/input
+bmc.compartment=XPATH|//*[@id="compartment"]
+bmc.comp.value=XPATH|//*[@id="compartment"]/option[2]
+bmc.compartment.box=XPATH|//*[@id="compartment"]
+
+#BMC IDCS
+bmc.login.idcs.username=XPATH|//*[@id="idcs-signin-basic-signin-form-username"]
+bmc.login.idcs.password=XPATH|//*[@id="idcs-signin-basic-signin-form-password"]
+bmc.login.idcs.signin=XPATH|//*[@id="idcs-signin-basic-signin-form-submit"]
+
+##select root compartment
+bmc.compartment.select=XPATH|//*[@id="compartment"]/option[2]
+bm.console.header.link.username=XPATH|//*[@id="user-menu-username"]
+bm.console.header.button.logout=XPATH|//*[@id="user-menu-sign-out"]
+
+bmc.tab.menu.database=XPATH|//*[@id="baseplate-root"]/div/header/nav/ul/li[4]/a
+bmc.database.system=XPATH|//*[@id="listing"]/div[1]/div/div/div/a
+bmc.database.compartment=XPATH|//*[@id="listing"]/div[1]/div/div[2]/div/a
+bmc.database.value=XPATH|//*[@id='duplo-compartment-control']/div/div/ul/li[1]/a
+bmc.database.vm=XPATH|//label[contains(., 'Virtual Machine')]
+bmc.database.physical=XPATH|//label[contains(., 'Bare Metal Machine')]
+bmc.database.createInstanceBtn=XPATH|//button[contains(., 'Launch DB System')]
+bmc.database.displayname=XPATH|//*[@id="db-systems.:form-state.:displayName"]
+bmc.database.availabilitydomain=XPATH|//*[@id="db-systems.:form-state.:availabilityDomain"]
+bmc.database.shape=XPATH|//*[@id="db-systems.:form-state.:shape"]
+bmc.database.nodecount=XPATH|//*[@id="db-systems.:form-state.:nodeCount"]
+bmc.database.storage=XPATH|//*[@id="db-systems.:form-state.:initialDataStorageSizeInGB"]
+bmc.database.softwareedition=XPATH|//*[@id="db-systems.:form-state.:databaseEdition"]
+bmc.database.byol=XPATH|//label[contains(., 'Bring Your Own License (BYOL)')]
+bmc.database.sshkey=XPATH|//label[contains(., 'Paste SSH keys')]
+bmc.database.keybrowse=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/form/div[1]/div[7]/div/div[1]/div[2]/label
+bmc.database.sshtextarea=XPATH|//*[@id="ssh-key-0"]
+bmc.database.vcn=XPATH|//*[@id="db-systems.:form-state.:vcnId"]
+bmc.database.clientsubnet=XPATH|//*[@id="db-systems.:form-state.:subnetId"]
+bmc.database.backupsubnet=XPATH|//*[@id="db-systems.:form-state.:backupSubnetId"]
+bmc.database.hostnameprefix=XPATH|//*[@id="db-systems.:form-state.:hostname"]
+bmc.database.dbname=XPATH|//*[@id="db-systems.:form-state.:databases-dbName"]
+bmc.database.dbversion=XPATH|//*[@id="db-systems.:form-state.:db-homes-dbVersion"]
+bmc.database.adminpassword=XPATH|//*[@id="db-systems.:form-state.:databases-adminPassword"]
+bmc.database.confirmpassword=XPATH|//*[@id="db-systems.:form-state.:databases-adminPassword-confirmation"]
+bmc.database.serialnumber=XPATH|//*[@id="db-systems.:form-state.:opc-host-serial"]
+bmc.database.launchdbbutton=XPATH|//input[contains(@value, 'Launch DB System')]
+bmc.database.terminate=XPATH|//button[contains(., 'Terminate')]
+bmc.database.terminate.text=XPATH|//*[@id="db-systems.:form-state.:dbNameSystemConfirmation"]
+bmc.database.terminate.confirm.button=XPATH|//input[contains(@value, 'Terminate DB System')]
+bmc.database.scale.button=XPATH|//*[@id="mountpoint"]/div/div[2]/div/main/div/div/div[1]/div[2]/div[1]/button[1]
+bmc.database.scale.text=XPATH|//*[@id="db-systems.:form-state.:cpuCoreCount"]
+bmc.database.scale.submit=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/form/input
+bmc.database.cpu=XPATH|//*[@id="mountpoint"]/div/div[2]/div/main/div/div/div[1]/div[2]/div[2]/div[7]
+bmc.database.scale.shape=XPATH|//*[@id="mountpoint"]/div/div[2]/div/main/div/div/div[1]/div[2]/div[2]/div[3]
+bmc.database.status=XPATH|//*[@id="mountpoint"]/div/div/main/div/div/div[1]/div[1]/p
+bmc.database.terminate.button=XPATH|//button[contains(., 'Terminate')]
+
+bmc.compute.tab.menu=XPATH|//*[@id="baseplate-root"]/div/header/nav/ul/li[3]/a
+bmc.compute.instances.link=XPATH|//*[@id="listing"]/div[1]/div/div/div/a[1]
+bmc.compute.createinstance.btn=XPATH|//button[contains(., 'Create Instance')]
+bmc.compute.displayname=XPATH|//*[@id="instances.:form-state.:displayName"]
+bmc.compute.availabilitydomain=XPATH|//*[@id="instances.:form-state.:availabilityDomain"]
+bmc.compute.image.os=XPATH|//*[@id="instances.:form-state.:operating-system"]
+bmc.compute.physical=XPATH|//label[contains(., 'Bare Metal Machine')]
+bmc.compute.vm=XPATH|//label[contains(., 'Virtual Machine')]
+bmc.compute.shape=XPATH|//*[@id="instances.:form-state.:shape"]
+bmc.compute.vcn=XPATH|//*[@id="instances.:vcnId"]
+bmc.compute.subnet=XPATH|//*[@id="instances.:form-state.:createVnicDetails.:subnetId"]
+bmc.compute.hostname=XPATH|//*[@id="hostname-label"]
+bmc.compute.sshkey=XPATH|//label[contains(., 'Paste SSH keys')]
+bmc.compute.sshtextarea=XPATH|//*[@id="ssh-key-0"]
+bmc.compute.launchinstance=XPATH|//input[contains(@value, 'Create Instance')]
+bmc.compute.launch.error=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/form/p
+bmc.compute.ipaddress=XPATH|//div[starts-with(., 'Public IP Address:')]
+bmc.compute.terminate.button=XPATH|//button[contains(., 'Terminate')]
+bmc.compute.terminate.confirm=XPATH|//button[contains(., 'Terminate Instance')]
+bmc.compute.status=XPATH|//*[@id="mountpoint"]/div/div/main/div/div[1]/div[1]/p
+
+bmc.exadata.sshkey=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/form/div[1]/div[10]/ul/li[2]/label
+bmc.exadata.byol=XPATH|//label[contains(., 'Bring Your Own License (BYOL)')]
+
+bmc.network.tab.menu=XPATH|//*[@id="baseplate-root"]/div/header/nav/ul/li[5]/a
+bmc.network.vcn.link=XPATH|//*[@id="listing"]/div[1]/div/div/div/a[1]
+bmc.network.vcn=XPATH|//*[@id="listing"]/div[1]/div/div/div/a
+bmc.network.vcn.createInstanceBtn=XPATH|//button[contains(., 'Create Virtual Cloud Network')]
+bmc.network.vcn.nameInput=XPATH|//*[@id="on-create-vcns.:form.:name"]
+bmc.network.vcn.allResourcesRadio=XPATH|//*[@id="auto"]
+bmc.network.vcn.createVNC=XPATH|//input[contains(@value, 'Create Virtual Cloud Network')]
+bmc.network.vcn.closeVCN=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/div/form/input
+bmc.network.vcn.displayName=XPATH|//*[@id="listing"]/div[2]/div[2]/div[2]/div[2]/div[2]/div[1]/a
+bmc.network.terminate.button=XPATH|//button[contains(., 'Terminate')]
+bmc.network.terminate.confirm=XPATH|//*/div/div/div/div/div[2]/form/div/button
+bmc.network.terminate.deletionComplete=XPATH|//*/div/div/div/div/div[2]/form/fieldset[2]/div/div/div[2]/p[contains(.,'deletion complete')]
+bmc.network.lb.link=XPATH|//*[@id="listing"]/div[1]/div/div[1]/div/a[4]
+bmc.network.lb.createInstanceBtn=XPATH|//*[@id="mountpoint"]/div/div[2]/div/main/div/div[2]/div[2]/button
+bmc.network.lb.nameInput=XPATH|//*[@id="load-balancers.:form-state.:displayName"]
+bmc.network.lb.shape=XPATH|//*[@id="load-balancers.:form-state.:shapeName"]
+bmc.network.lb.vcn=XPATH|//*[@id="load-balancers.:form-state.:vcn"]
+bmc.network.lb.subnet1=XPATH|//*[@id="load-balancers.:form-state.:subnet-1"]
+bmc.network.lb.subnet2=XPATH|//*[@id="load-balancers.:form-state.:subnet-2"]
+bmc.network.lb.create=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/form/div/input
+bmc.network.lb.status=XPATH|//*[@id="mountpoint"]/div/div[2]/div/main/div/div[1]/div[1]/p
+bmc.network.lb.terminate.button=XPATH|//*[@id="mountpoint"]/div/div[2]/div/main/div/div[1]/div[2]/div[1]/button
+bmc.network.lb.terminate.confirm=XPATH|//*[@id="mountpoint"]/div/div[2]/div[2]/div/div/div[2]/div/button[2]
+
+##block volume
+bmc.block.tab.menu=XPATH|//*[@id="baseplate-root"]/div/header/nav/ul/li[6]/a
+bmc.block.instance.link=XPATH|//*[@id="listing"]/div[1]/div/div[1]/div/a[1]
+bmc.block.createinstance.btn=XPATH|//*[@id='mountpoint']//div[@class='listing-v2-actions']/button[@class='action create']
+bmc.block.displayname=XPATH|//*[@id="volumes.:form-state.:display-name"]
+bmc.block.avilabilitydomain=XPATH|//*[@id="volumes.:form-state.:availability-domain"]
+bmc.block.size=XPATH|//*[@id="volumes.:form-state.:size-in-gbs"]
+bmc.block.addOk.btn=XPATH|//div[@class='card-stack']//input[@type='submit']
+bmc.block.terminate.button=XPATH|//div[@class='detail-actions']//button[2]
+bmc.block.terminate.confirm=XPATH|//div[@class='card-body']/div[@class='dialog-buttons']/button[2]
+bmc.block.status=XPATH|//div[@id='mountpoint']//p[contains(@class,'status-label')]
+##object storage
+bmc.object.instance.link=XPATH|//div[@class='page-sidebar']/div[@class='nav-menu-stack']/div[@class='subnav-menu']/a[4]
+bmc.object.createinstance.btn=XPATH|//*[@id="listing"]/div[2]/div[1]/div[2]/div[1]/button
+bmc.object.displayname=XPATH|//*[@id="on-create-buckets.:form.:name"]
+bmc.object.standard=XPATH|//*/input[@id="on-create-buckets.:form.:storage-tier"][@value="Standard"]
+bmc.object.archive=XPATH|//*/input[@id="on-create-buckets.:form.:storage-tier"][@value="Archive"]
+bmc.object.addOk.btn=XPATH|//div[@class='card-stack']//input[@type='submit']
+bmc.bucket.ready=XPATH|//*[@id="listing"]/div[2]/div[1]/div[2]/div[2]/div[1]/div[2]/div/a
+bmc.object.terminate.btn=XPATH|//div[@class='detail-actions']/button[2]
+bmc.object.terminate.confirm=XPATH|//div[@class='card-body']/div[@class='dialog-buttons']/button[2]
+bmc.object.upload.button=XPATH|//div[@class='listing-batch-actions']/button
+bmc.object.upload.browse=XPATH|//div[@class='create-object']//div[@class='file-select']/label
+bmc.object.upload.ready=XPATH|//div[@class='create-object']//input[@type='submit']
+bmc.object.delete.ready=XPATH|//div[@class='card-stack']//div[@class='dialog-buttons']/button[2]
+
+
+account.banner.dashboard=XPATH|//div[@class='dash-smry-account-label']
+
+myaccount.dashboard.bm.list=XPATH|//div[@class='af_listItem' and contains(., 'Oracle Bare Metal Cloud Service']
+
+myservice.detail.drop.button=XPATH|//a[contains(@class,'folder-icon') and contains(@title,'Show explanation')]
+myservice.top.details.div=XPATH|//div[contains(@id, 'pt1:pt2:j_id') and contains(@class,'x19')]
+myaccount.details.info.div=XPATH|//div[@id='pt1:pt2:currentTabHTMLContents:overview-form-div']
+##myaccount.detail.service.info.value=XPATH|./../../td[2]
+myaccount.detail.service.info.value=XPATH|./td[2]
+myservice.dashboard.top.div=XPATH|//div[@class='oj-filmstrip-container oj-filmstrip-pages-container']
+myservice.viewdetails.service.button.openconsole=XPATH|//button[contains(., 'Open Service Console')]
+
+sdp.metrics.button=XPATH|//span[not(*) and contains(text(),'Business Metrics') and (contains(@id,'-title') or contains(@class,'-title'))]
+sdp.metrics.historical.usage.table=XPATH|//span[contains(@id,':cmp-table:')]/table
+sdp.metrics.latest.usage.table=XPATH|//span[contains(@id,':cu-it:')]/table
+sdp.metrics.latest.usage.nodata=XPATH|//span[contains(@id,'su-pgl-top') and contains(text(),'No utilization data')]
+detailspage.metering.button=XPATH|//span[contains(@class,'x2e') and (contains(text(),'Metering') or contains(text(),'Billing Metrics'))]
+detailspage.resource.quota.button=XPATH|//span[contains(@class,'x2e') and (contains(text(),' Resource Quotas'))]
+detailspage.resource.quota.table=XPATH|//span[contains(@id,'sec-table')]
+detailspage.resource.quota.table.line=XPATH|//div[contains(@id,'pt1:pt2:currentTabHTMLContents:aud-lv') and contains(@class,'x')]/span[contains(@id,'aud-lv')]/span[2]
+##detailspage.metering.usage.table=XPATH|//span[contains(@class,'pos-flt-left')]/span[last()]//table[contains(@class,'table-metric')]
+detailspage.metering.usage.table=XPATH|//span[contains(@id,'suit0a:0:st')]/table[contains(@class,'table-metric')]
+
+#Apex
+apex.home.tab.workshop=XPATH|//a[(@class='link_text' or @class='a-MenuBar-label') and contains(.,'SQL Workshop')]
+apex.home.tab.applicationbuilder=XPATH|//a[(@class='link_text' or @class='a-MenuBar-label') and contains(.,'Application Builder')]
+apex.sql.commands.button=XPATH|//a[contains(.,'SQL Commands')]
+apex.sql.commands.area=XPATH|//div[@id='scCommandHolder']//textarea[contains(@class,'a-Form-textarea--code')]
+apex.sql.commands.run=XPATH|//button[contains(.,'Run')]
+apex.sql.commands.sql.ename=XPATH|//div[@id='ResultsSQL']//tr[2]/td[@headers='ENAME']
+apex.sql.commands.sql.resp=XPATH|//div[@id="BOX_BODY"]/pre
+apex.swsp.button.restful.service=XPATH|//a[(@class='iconContainer' or contains(@class,'a-ImageNav-link')) and contains(.,'RESTful Services')]
+apex.swsp.link.restful.service=XPATH|//a[@class='a-Breadcrumb-label' and contains(.,'RESTful Services')]
+apex.rest.listp.svc.button=LINKTEXT|oracle.example.hr
+apex.rest.detailp.svc.button.get=XPATH|//li[@class='method' and contains(.,'employees')]/ul//a[contains(.,'GET')]
+apex.rest.detailp.svc.select.requirehttp=ID|P9_REQUIRES_HTTPS
+apex.rest.detailp.svc.button.apply.changes=XPATH|//button[contains(.,'Apply Changes')]
+apex.rest.ora.example.hr=XPATH|//a[@class='a-IRR-icon' and contains(.,'oracle.example.hr')]
+apex.rest.create.template=XPATH|//div[@id='sideTree']//a[contains(.,'Create Template')]
+apex.rest.input.uri.templ=XPATH|//input[@id='P11_URI_TEMPLATE']
+apex.rest.action.processed=XPATH|//div[@id='page_success_msg']//div[contains(.,'Action Processed')]
+apex.rest.employee.create.handler=XPATH|//li[@class='method active' and contains(.,'employee')]//a[@title='Create Handler']
+apex.rest.employee=XPATH|//a[@title='URI Template: employee']
+apex.rest.method.options=XPATH|//select[@id='P9_METHOD']
+apex.rest.code.editor.button=ID|P9_SOURCE_widget_settings
+apex.rest.create.parameter=XPATH|//button[contains(.,'Create Parameter')]
+apex.rest.create.parameter.name=ID|P12_ALIAS
+apex.rest.create.parameter.bindv=ID|P12_NAME
+apex.rest.delete.button=XPATH|//button[contains(.,'Delete')]
+apex.app.shared.components=XPATH|//span[@class='a-ImageNav-label' and contains(.,'Shared Components')]
+apex.app.create.application=XPATH|//button[contains(.,'Create Application')]
+apex.app.create.application.authidm=XPATH|//select[contains(@id,'AUTHENTICATION')]//option[@selected='selected']
+apex.app.create.application.authsel=XPATH|//select[contains(@id,'AUTHENTICATION')]
+apex.app.create.application.id=XPATH|//table[@class='a-Report-report' and @role='presentation']//tr[contains(.,'Application')]/td[2]
+apex.app.application.created=XPATH|//div[@class='a-Alert-body' and contains(.,'Application created successfully')]
+apex.app.application.create.page=XPATH|//button[contains(.,'Create Page')]
+apex.app.page.create.iframe=XPATH|//iframe[@title='Create a Page']
+apex.app.application.create.form=XPATH|//li[contains(@class,'a-IconList-item') and @data-value='FORM']
+apex.app.application.create.formws=XPATH|//li[contains(@class,'a-IconList-item') and @data-value='FORMWS']
+apex.app.application.formws.wsr=ID|P600_WS_ID
+apex.app.application.formws.wsrop=XPATH|//select[@id='P600_OPERATION_ID']//option[@selected='selected']
+apex.app.application.page.msg.button=ID|pdNotificationClose
+apex.app.application.page.saverun=XPATH|//button[@title='Save and Run Page']
+apex.app.application.page.username=XPATH|//input[@type='text' and contains(@id,'USERNAME')]
+apex.app.application.page.password=XPATH|//input[@type='password' and contains(@id,'PASSWORD')]
+apex.app.application.page.login=XPATH|//button[contains(.,'Log In')]
+apex.app.application.page.logout=XPATH|//a[@role='button' and contains(.,'Log Out')]
+apex.app.application.page.oldpswd=XPATH|//input[@type='password' and @name='p_t01']
+apex.app.application.page.newpswd=XPATH|//input[@type='password' and @name='p_t02']
+apex.app.application.page.cfmpswd=XPATH|//input[@type='password' and @name='p_t03']
+apex.app.application.page.chgpswd=XPATH|//button[contains(.,'Apply Changes')]
+apex.app.application.page.ename=XPATH|//input[@type='text' and contains(@id,'ENAME')]
+apex.app.application.page.submit=XPATH|//button[contains(.,'Submit')]
+apex.app.application.page.error=XPATH|//li[@class='htmldbOraErr']
+apex.app.detailp.button.edit.properties=XPATH|//button[contains(.,'Edit Application Properties')]
+apex.app.detailp.text.proxy=ID|F4000_P4001_PROXY_SERVER
+apex.app.detailp.button.apply.changes=XPATH|//button[contains(.,'Apply Changes')]
+apex.app.detailp.tab.sharedcomponent=XPATH|//a[(@class='iconContainer' or contains(@class,'a-ImageNav-link')) and contains(.,'Shared Components')]
+apex.scp.list.link.wsr=LINKTEXT|Web Service References
+apex.wsdp.button.create=XPATH|//button[contains(.,'Create')]
+apex.wsdp.wsr.iframe=XPATH|//iframe[@title='Create Web Service Reference']
+
+apex.wsdp.radio.rest=ID|P870_WEB_REFERENCE_TYPE_0
+apex.wsdp.button.next=XPATH|//button[contains(.,'Next')]
+apex.wsdp.iframe.createws=XPATH|//iframe[@title='Create Web Service Reference']
+
+apex.wsdp.ws.text.name=ID|P871_NAME
+apex.wsdp.ws.text.url=ID|P871_URL
+apex.wsdp.ws.radio.post=ID|P871_METHOD_2
+apex.wsdp.ws.button.next=XPATH|//button[contains(.,'Next')]
+apex.wsdp.text.header=XPATH|//div[@id='report_rest_http_headers']//td[@class='a-Report-cell' and @headers='NAME']//input[@type='text']
+apex.wsdp.text.param=XPATH|//table[@id='report_rest_input_parms' or @class='a-Report-report']//tr[last()]/td[@headers='NAME']/input[@name='f02']
+apex.wsdp.ws.button.test=XPATH|//button[contains(.,'Test')]
+apex.wsdp.text.trash=XPATH|//div[contains(@id,'report_rest')]//td[@class='a-Report-cell' and @headers='SEQ_ID']//span[contains(@class,'icon-remove')]
+apex.wsdp.output.format.text=XPATH|//div[@class='a-Form-inputContainer']//table[@role='presentation' and @class='radio_group']//input[@type='radio' and @value='text']
+apex.rwsd.win.text.value=ID|input1
+apex.rwsd.win.button.test=XPATH|//button[contains(.,'Test')]
+apex.rwsd.win.textarea.response=ID|rest_response_container
+
+#data export
+apex.dp.tab.export=XPATH|//span[contains(@class,'nsd-bx-title') and contains(.,'Exports')]
+apex.dexpp.button.export=XPATH|//button[contains(.,'Export Data')]
+apex.dexpp.checkbox.includedata=XPATH|//input[contains(@id,'sbcb2::content')]
+apex.dexpp.button.createed=XPATH|//button[contains(.,'Create Data Export')]
+apex.dexpp.text.sftpuser=XPATH|//tr[contains(@class,'overview-style af_panelLabelAndMessage') and contains(.,'Service SFTP User Name')]/td[2]/a
+apex.dexpp.lastrecord.filename=ID|pt1:pt2:currentTabHTMLName:lv-db:0:exp-row:cnIt1:col-item-value
+apex.dexpp.lastrecord.status=ID|pt1:pt2:currentTabHTMLName:lv-db:0:exp-row:cnIt2:col-item-value
+
+#service association
+apex.dp.tab.associate=XPATH|//span[contains(@class,'nsd-bx-title') and contains(.,'Associations')]
+apex.mastp.button.manageas=XPATH|//button[contains(.,'Manage Associations')]
+apex.mastp.div.maasct=XPATH|//div[contains(@id,'::_ttxt') and contains(.,'Manage Associations')]
+apex.mastp.button.moveall=XPATH|//a[contains(@class,'af_selectManyShuttle_moveall-horizontal-icon-style')]
+apex.mastp.button.removeall=XPATH|//a[contains(@class,'af_selectManyShuttle_removeall-horizontal-icon-style')]
+apex.mastp.button.confirm=XPATH|//button[contains(@id,'gl-assoc') and contains(.,'OK')]
+apex.mastp.button.ok=XPATH|//button[contains(@id,'cb-ok') and contains(.,'OK')]
+
+apex.console.admin.menu=ID|header-adminMenu
+apex.console.admin.option=ID|adminMenu_menu_0i
+apex.console.manage.users=XPATH|//div[contains(@class,'a-Region--hideHeader')]//a[contains(.,'Manage Users and Groups')]
+
+
+apex.console.object.browser=XPATH|//a[(@class='iconContainer' or contains(@class,'a-ImageNav-link')) and contains(.,'Object Browser')]
+apex.console.panel.select=XPATH|//select[@id='obObjectSelect']
+
+apex.console.object.frame=ID|dbaseContent
+apex.console.table.data.tab=XPATH|//a[contains(.,'Data')]
+apex.console.view.data.tab=XPATH|//a[contains(.,'Data')]
+apex.console.table.data.cols=XPATH|//th[@class='a-Report-colHead']
+apex.console.pkg.spec.tab=XPATH|//a[contains(.,'Specification')]
+apex.console.pkg.body.tab=XPATH|//a[contains(.,'Body')]
+apex.console.pkg.code.container=XPATH|//div[@class='CodeMirror-code']
+#apex.console.data.tab.next.button=XPATH|//div[contains(@id,'report_R') and contains(@class,'a-Report')]/div/table[2]/tbody/tr/td/table/tbody/tr/td[4]/a
+
+#apex.console.create.user=XPATH|//button[contains(@class,'a-Button--iconTextButton') and text()='Create User']
+#apex.console.create.user.name=XPATH|//input[@type='text' and contains(@id,'USER_NAME')]
+#apex.console.create.user.email=XPATH|//input[@type='email' and contains(@id,'EMAIL_ADDRESS')]
+#apex.console.create.user.password=XPATH|//input[@type='password' and contains(@id,'WEB_PASSWORD')]
+#apex.console.create.user.password.confirm=XPATH|//input[@type='password' and contains(@id,'PASSWD_CONFIRM')]
+#apex.console.create.user.option.oauth=XPATH|//option[text()='OAuth2 Client Developer']
+#apex.console.create.user.option.restful=XPATH|//option[text()='RESTful Services']
+#apex.console.create.user.option.sqldev=XPATH|//option[text()='SQL Developer']
+#apex.console.create.user.option.moveall=XPATH|//button[contains(@id,'GROUP_IDS_MOVE_ALL') and @title='Move All']/span
+#apex.console.create.user.create=XPATH|//button[contains(@class,'a-Button--hot') and text()='Create User']
+#apex.console.create.user.errmsg=XPATH|//div[@id='page_warning_msg']/div/div[2]/div[2]/ul
+
+#APEX console
+#apex.console.data.tab.next.button=XPATH|//div[contains(@id,'report_R') and contains(@class,'a-Report')]/div/table[2]/tbody/tr/td/table/tbody/tr/td[4]/a
+apex.console.create.user=XPATH|//button[contains(@class,'a-Button--iconTextButton') and contains(.,'Create User')]
+apex.console.create.user.name=XPATH|//input[@type='text' and contains(@id,'USER_NAME')]
+apex.console.create.user.email=XPATH|//input[@type='email' and contains(@id,'EMAIL_ADDRESS')]
+apex.console.create.user.password=XPATH|//input[@type='password' and contains(@id,'WEB_PASSWORD')]
+apex.console.create.user.password.confirm=XPATH|//input[@type='password' and contains(@id,'PASSWD_CONFIRM')]
+apex.console.create.user.option.oauth=XPATH|//option[text()='OAuth2 Client Developer']
+apex.console.create.user.option.restful=XPATH|//option[text()='RESTful Services']
+apex.console.create.user.option.sqldev=XPATH|//option[text()='SQL Developer']
+apex.console.create.user.option.moveall=XPATH|//button[contains(@id,'GROUP_IDS_MOVE_ALL') and @title='Move All']/span
+apex.console.create.user.create=XPATH|//button[contains(@class,'a-Button--hot') and contains(.,'Create User')]
+apex.console.create.user.errmsg=XPATH|//div[@id='page_warning_msg']//ul
+
+#Identity Domain Administration
+myservice.dashboard.popup.menu=ID|pt1:header:h:hdcl3
+myservice.dashboard.logout=ID|pt1:header:h:logout
+sdp.idomain.tab=XPATH|//span[contains(@class,'nsd-bx-title') and contains(.,'Identity Domain Administration')]
+sdp.idomain.tab.input=ID|pt1:pt2:currentTabHTMLName:currentTabContents:id-name::content
+sdp.idomain.tab.submit=ID|pt1:pt2:currentTabHTMLName:currentTabContents:iaw_cb1ud
+sdp.idomain.change.msg=XPATH|//div[@id='pt1:pt2:currentTabHTMLName:currentTabContents:m1']//tbody//tbody/tr/td[2]/div

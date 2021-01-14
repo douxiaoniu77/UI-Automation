@@ -1,0 +1,47 @@
+'''
+Created on May 17, 2018
+
+@author: umartine
+
+===============================================================================
+                                Change log
+===============================================================================
+
+    Date         GUID        Comment
+    ---------------------------------------------------------------------------
+    2018-05-17   umartine    Initial creation
+    2018-12-05   umartine    Support for compartment selection
+
+'''
+
+import oci_cli_qa.lib.operations.object_storage as obs
+
+def create_bucket(config, bucket_cfg):
+    compartment_id = bucket_cfg["compartment"]
+    name = bucket_cfg["display_name"]
+    tier = bucket_cfg["shape"]
+    obs.create_bucket(config, compartment_id, name, tier)
+
+
+def upload_content(config, bucket_cfg):
+    name = bucket_cfg["display_name"]
+    amount = int(bucket_cfg["amount"])
+    obs.upload_content(config, name, amount)
+
+
+def delete_content(config, bucket_cfg):
+    name = bucket_cfg["display_name"]
+    amount = int(bucket_cfg["amount"])
+    obs.delete_content(config, name, amount)
+
+
+def delete_bucket(config, bucket_cfg):
+    name = bucket_cfg["display_name"]
+    obs.delete_bucket(config, name)
+
+
+OBJECT_STORAGE_OPS = {"CREATE":    create_bucket,
+                      "UPSIZE":    upload_content,
+                      "DOWNSIZE":  delete_content,
+                      "TERMINATE": delete_bucket
+                      }

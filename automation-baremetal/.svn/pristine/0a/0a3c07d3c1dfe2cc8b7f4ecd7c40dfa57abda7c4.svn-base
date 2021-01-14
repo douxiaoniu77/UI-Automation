@@ -1,0 +1,6 @@
+{
+    "create_fss": true,
+    "upload_content": true,
+    "delete_content": true,
+    "delete_fss": true
+}

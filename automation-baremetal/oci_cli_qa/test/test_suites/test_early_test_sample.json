@@ -1,0 +1,139 @@
+{
+   "name": "Sample Test Suite for Load Balancer XD",
+   "endpoints": [
+      {
+         "name": "IAAS_VCN",
+         "uri": "https://iaas.us-ashburn-1.oraclecloud.com/20160918/vcns",
+         "$$hashKey": "object:5"
+      },
+      {
+         "name": "IAAS_SUBNET",
+         "uri": "https://iaas.us-ashburn-1.oraclecloud.com/20160918/subnets",
+         "$$hashKey": "object:6"
+      },
+      {
+         "name": "IAAS_LB",
+         "uri": "https://iaas.us-ashburn-1.oraclecloud.com/20170115/loadBalancers",
+         "$$hashKey": "object:7"
+      }
+   ],
+   "accounts": [
+      {
+         "name": "main_account",
+         "tenancy_ocid": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a",
+         "user_ocid": "ocid1.user.oc1..aaaaaaaamdwys6owmp6lykzxmibb43nqkes7nktrxff5ezuobcb5wb3oyigq",
+         "api_footprint": "09:e4:86:07:74:59:8a:94:5f:7f:06:4e:cc:ae:9e:16",
+         "api_privatekey": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEAxgGZveKS4hO1ActrYRx/eeqBS8wX6SG7BfnwgwcuoQwdF5Kg\nLyrhoUKUSLCEVnoj2ocKahF7XxwRNumEHZ9LpQj37+HBVFlK3T3O9nZP532k7Z1D\nvDeQkYJFRjliDdmPERn2H5sBEMbQ8tTo3snm1WV/mAprA/w7KxNxLRe4zc8Mdlzi\nda94dtOhCK8tAax8uvQxXq6qswPjdLGLi8Zsl1qtspDEQvFdhvshlCpjaHQYe1cd\nd0QAVnc8A+GElNCF9IGWnTcQFn7v10MFZpPwgfRAfYL5pgsZCcRZGofM4kY3N3tj\n6Xb/q/2fN8ldAN2WQWAKnmYP+5r2W3CVds6S0wIDAQABAoIBAQCi6sA354vZbkOZ\ndWklnxAYHOZDmmr2DCXY1fyZorgwFEp/kcow5QR+7cwaPvq0OIz1ifT8ruOmru5P\nEzX8NYxE/ysZedPbdhjODsQSL+iw3MVuKN6Jp+JQhzI+hIp0QNShSo4jFSN8TUmw\n85Ojc9Z1MK0aSUAiKE/6smWFp6YL12PYkvHDfCfK3cXXoLpRIcbScQgZWF1ZS92M\nL+ysb1KLJjKE6rygJWondDntQRRadVV4pKpFQIMxLWeOOZuGjFrtV8grN/igeui+\ny+RLeWHhVklbFy00badko2a79wt55Mbdpf7QOMjNfk8vdhDSqDr9xXvxnFO3H8C/\nEwGqZtKBAoGBAPEfuXPMTqwJnwtdCyaG/HsVNnLhRvOEi6tG7hdyIZns/7cNdf4b\nw9lyldRSWYxWa2+JhHk3GkHZ/zm8e3PLVBixJSmplNFF1lnJ9Ua1KMrQr6DDIYeu\nopmHBARjQzmqdkptPMm1XmKskhDWW3kG0OaJCtYuqniZPKr+s0GnEY+TAoGBANI4\n4ctBShIl/qxdzXY7R4JbLDiJfXchNXOCFiar25EJ0wF+EcBN/kWkGxUHsSXJTuZS\nDxeRbCenjyFraZvALT7d/SQAXuSnKHMj4nNi5Dne5nys5mIxPQCTPsAnsdivEr4Y\notbPJtigCZGvmb8m0X3KXJMGgL/IjmgBO4NAXHfBAoGAdLrl/eBHqdOSkl692i35\nJuDzFhRnU9a0Avv4oZMYHztz5Dt5BsaMPsXRMROY1G613i5V2pTJel29yEauATXL\nBZUkp5G4QMOtbJRv0IY9NEpo68vrfJMXlnmdgT5Iui8Cyy8tAX1zLxPaNpp/eAzL\nrv9jJqM61d1hWGqrfzoRL08CgYEAjfZtvJXFkIXp+rqJwnr7qnMpZLCscqORdgR2\nMv1BlCt/O/XHxQamXJ8aztPX9D2Cs5Tcrjy9PfYweRARTGW16Et+5C3/5wdfEIo+\nJU+18cKuAam9FrhLirTk3lywBDUOQiNe7BMOF6HTdHeSKvzq4bijVYJBtcGZMXEL\noHH5P8ECgYEAkFHNMnxZO56PeKJdBmk2dIGeXejbOMv9Pxbgx3KbUbvojtgkuzLp\ns/FzNNbEVIAOQ8px8Pz7A/cNPN9VrL6roA1tg5ffdSLumekCyQ3tUXAVaSKVfQX5\n3UyyO6sd4UNT1XBcrshumFbnYSKmgq1djwze2oIc1wNyksj2VuFc2os=\n-----END RSA PRIVATE KEY-----",
+         "$$hashKey": "object:11"
+      }
+   ],
+   "tests": [
+      {
+         "name": "TEST_LIST_VCN",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_VCN",
+            "header": {
+               "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:15"
+      },
+      {
+         "name": "TEST_LIST_SUBNET",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_SUBNET",
+            "header": {
+               "compartmentId": "{TEST_LIST_VCN.details.header.compartmentId}",
+               "vcnId": "{TEST_LIST_VCN.result[0].id}"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:16"
+      },
+      {
+         "name": "TEST_LIST_LB_BEFORE",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_LB",
+            "header": {
+               "compartmentId": "{TEST_LIST_VCN.details.header.compartmentId}"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:17"
+      },
+      {
+         "name": "TEST_CREATE_LB",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_LB",
+            "body": {
+               "compartmentId": "{TEST_LIST_VCN.details.header.compartmentId}",
+               "displayName": "REST_API_LB",
+               "shapeName": "100Mbps",
+               "subnetIds": [
+                  "{TEST_LIST_SUBNET.result[0].id}",
+                  "{TEST_LIST_SUBNET.result[1].id}"
+               ]
+            },
+            "request_type": "POST",
+            "expected_response": "204",
+            "path": {},
+            "header": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:18"
+      },
+      {
+         "name": "WAIT_SERVICE_PROVISIONING",
+         "type": "WAIT",
+         "details": {
+            "wait_time": "1",
+            "account": "",
+            "endpoint": "",
+            "path": {},
+            "header": {},
+            "body": {},
+            "request_type": "",
+            "expected_response": ""
+         },
+         "$$hashKey": "object:19"
+      },
+      {
+         "name": "TEST_LIST_LB_AFTER",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_LB",
+            "header": {
+               "compartmentId": "{TEST_LIST_VCN.details.header.compartmentId}"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:20"
+      }
+   ]
+}

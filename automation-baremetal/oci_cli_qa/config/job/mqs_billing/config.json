@@ -1,0 +1,10 @@
+{
+    "cacct_id":			"cacct-d648dc95154b41619cb269aa2d02b174",
+    "service_name":		"COMPUTEBAREMETAL",
+    "resource_name": 	"PIC_OBJECT_STORAGE",
+    "entitlement_id":	"522572192",
+    "start_time": 		"2018-06-02T00:00:00.000Z",
+    "end_time":   		"2018-06-02T10:00:00.000Z",
+    "expected_entries":	26,
+    "expected_value":   0.0
+}

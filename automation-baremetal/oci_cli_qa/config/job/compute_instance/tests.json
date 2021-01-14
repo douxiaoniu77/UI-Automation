@@ -1,0 +1,7 @@
+{
+    "create_instance": true,
+    "fake_instance": false,
+    "connect_instance": false,
+    "update_instance": true,
+    "terminate_instance": false
+}

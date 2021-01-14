@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="dashboardApp" ng-controller="dashboardController">
+			<h1>{{ service.name }}</h1>
+			<a href="index.html">Back to Dashboard</a>
+
+			<!-- DEBUG: SERVICE LIST SECTION -->
+			<div class="testsuite_section" class="testsuite_table">
+				<table>
+					<tr class="testsuite_table">
+						<th>Resource Name</th>
+						<th>Test Suite</th>
+						<th>Last Result</th>
+						<th>Run</th>
+						<th>Remove</th>
+					</tr>
+					<tr class="testsuite_table dashboard_table">
+						<th colspan="6">Instance Creation</th>
+					</tr>
+					<tr ng-repeat="testsuite in service.testsuites | filter : isCreationTC" class="testsuite_table">
+						<td>{{ testsuite.resource_name }}</td>
+						<td>{{ testsuite.name }}</td>
+						<td>{{ testsuite.last_result }}</td>
+						<td><a href="testsuite.html">Edit</a></td>
+						<td>
+							<button ng-click="removeTestsuite(service, testsuite)">Remove</button>
+						</td>
+					</tr>
+					<tr class="testsuite_table dashboard_table">
+						<th colspan="6">Instance Deletion</th>
+					</tr>
+					<tr ng-repeat="testsuite in service.testsuites | filter : isDeletionTC" class="testsuite_table">
+						<td>{{ testsuite.resource_name }}</td>
+						<td>{{ testsuite.name }}</td>
+						<td>{{ testsuite.last_result }}</td>
+						<td><a href="testsuite.html">Edit</a></td>
+						<td>
+							<button ng-click="removeTestsuite(service, testsuite)">Remove</button>
+						</td>
+					</tr>
+					<tr class="testsuite_table dashboard_table">
+						<th colspan="6">Account Suspended</th>
+					</tr>
+					<tr ng-repeat="testsuite in service.testsuites | filter:isSuspendTC" class="testsuite_table">
+						<td>{{ testsuite.resource_name }}</td>
+						<td>{{ testsuite.name }}</td>
+						<td>{{ testsuite.last_result }}</td>
+						<td><a href="testsuite.html">Edit</a></td>
+						<td>
+							<button ng-click="removeTestsuite(service, testsuite)">Remove</button>
+						</td>
+					</tr>
+					<tr class="testsuite_table">
+						<td><input type="text" ng-model="new_testsuite.resource_name"></td>
+						<td><input type="text" ng-model="new_testsuite.name"></td>
+						<td><select ng-model="new_testsuite.type">
+							      <option value="{{ operation }}" ng-repeat="operation in operations">{{ operation }}</option>
+							    </select>
+						</td>
+						<td><button ng-click="addTestsuite(service)">Add</button></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<!-- DEBUG: JAVASCRIPT CODE -->
+			<div class="testsuite_section">
+				<h2>Test Suite Output</h2>
+				<div id="testsuite_status" class="testsuite_output">
+					<pre>{{ printJson(new_testsuite) }}</pre>
+					<pre>{{ printJson(service) }}</pre>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="service.js"></script>
+	</body>
+</html>

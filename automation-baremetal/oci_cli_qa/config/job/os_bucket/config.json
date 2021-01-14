@@ -1,0 +1,6 @@
+{
+    "display_name": "test_bucket_1",
+    "shape": "Archive",
+    "amount" : 256,
+    "compartment": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_APIKeySetup">
+	<parameter name="cloudAdmurl" value="" />
+	<test name="BareMetal_Console_APIKeySetup"
+			preserve-order="true">
+		<classes>
+			<class name="com.oracle.opc.automation.test.testcase.test.BMIBEPromoTest">
+				<methods>
+				   <include name="changeTemporaryPassword"/>
+				</methods>
+			</class>
+			<class name="com.oracle.opc.automation.test.testcase.baremetal.BMServiceConsoleTest">
+				<methods>
+				   <include name="BM_ServiceConsole_Login"/>
+				   <include name="BM_Upload_PublicKey"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

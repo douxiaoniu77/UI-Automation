@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_MBE_Migration">
+	<parameter name="cloudAdmurl" value="" />
+	
+	
+	<test name="BareMetal_MIG_MeteringTest"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMMBEMeteringTest">
+				<methods>	
+				
+				<include name="BM_MyService_Metering"/>
+	
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="BareMetal_SanityTest_MBE_Migration"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMCSTest">
+				<methods>
+				
+				
+				<include name="BM_MyAccount_Dashboard_MBE_Subscription"/>
+				<include name="BM_MyService_MBE_Subscription"/>
+				
+					<!--  
+						 <include name="BM_MyAccount_ViewDetails"/>
+						 <include name="BM_MyAccount_Estimate_Balance"/>
+				 <include name="BM_MyService_ViewDetails"/>
+				 <include name="BM_MyService_ViewDetails_SFTP"/>
+				 <include name="BM_Login_ServiceConsole"/>	
+				
+					<include name="BM_MyAccount_MBE_Status"/>
+				 <include name="BM_MyService_MBE_Status"/>
+					
+                    <include name="BM_MyService_Estimate_Balance"/>
+                    <include name="BM_MyService_Dashboard_MBE_List"/>
+                     <include name="BM_MyAccount_Dashboard_MBE_List"/>
+
+					<include name="BM_MyService_MBE_Metering" />
+					<include name="BM_MyAccount_MBE_Metering" /> 
+                   
+					<include name="BM_MyService_Dashboard_Validate_Account"/>
+					<include name="BM_Login_ServiceConsole" />
+					<include name="BM_Logout_ServiceConsole" />  -->
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	
+</suite>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_ServiceConsole">
+	<!-- <parameter name="cloudAdmurl" value="" />
+        <test name="BareMetal_Console_Login/Logout"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMServiceConsoleTest">
+				<methods>
+				    <include name="BM_ServiceConsole_Login"/>
+				  	<include name="BM_ServiceConsole_Logout"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+  <test name="BareMetal_DYN_Email_Test"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMServiceConsoleTest">
+				<methods>
+				 <include name="BM_Email_SMTP_Configuration"/>
+				    <include name="BM_Email_Add_ApprovedSender"/>
+				  	<include name="BM_Email_Terminate_ApprovedSender"/>
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+	 <test name="BareMetal_DYN_Email_SendingTest"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMServiceConsoleTest">
+				<methods>
+				 
+				  <include name="BM_Email_SEND_VIA_SWAKS"/>	
+                     
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	<!-- <test name="BM_UsageReport"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+				<include name="BM_TAS_SM_Validate"/>
+				<include name="BM_UsageReport"/>
+				
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+
+</suite>

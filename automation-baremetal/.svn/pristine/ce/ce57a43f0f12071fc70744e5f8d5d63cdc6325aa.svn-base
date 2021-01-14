@@ -1,0 +1,7 @@
+{
+    "user": "ocid1.user.oc1..aaaaaaaamdwys6owmp6lykzxmibb43nqkes7nktrxff5ezuobcb5wb3oyigq",
+    "key_file": "config/oci_api_key.pem",
+    "fingerprint": "09:e4:86:07:74:59:8a:94:5f:7f:06:4e:cc:ae:9e:16",
+    "tenancy": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a",
+    "region": "us-ashburn-1"
+}

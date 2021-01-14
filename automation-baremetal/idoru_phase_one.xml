@@ -1,0 +1,19 @@
+<suite name="BareMetal_OPCTest_ServiceConsole_Migration">
+	<parameter name="cloudAdmurl" value="" />
+        <test name="BareMetal_Instance_creation"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMServiceConsoleTestPhaseOne">
+				<methods>
+					<include name="BM_Create_VCN_Instance"/>
+					<include name="BM_Create_Compute_Instance"/>
+					<include name="BM_Terminate_Compute_Instance"/>
+					<include name="BM_Create_Database_Instance"/>
+					<include name="BM_Terminate_DB_Instance"/>
+					<include name="BM_Terminate_VCN_Instance"/>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+</suite>

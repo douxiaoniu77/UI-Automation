@@ -1,0 +1,72 @@
+[
+   {
+       "name": "Load Balancer",
+       "testsuites": [
+           {
+               "name": "instance_creation",
+               "resource_name": "PIC_LB_SMALL",
+               "type": "creation",
+               "last_result": "PASS"
+           },
+           {
+               "name": "instance_deletion",
+               "resource_name": "PIC_LB_SMALL",
+               "type": "deletion",
+               "last_result": "PASS"
+           },
+           {
+               "name": "instance_creation",
+               "resource_name": "PIC_LB_MEDIUM",
+               "type": "creation",
+               "last_result": "PASS"
+           },
+           {
+               "name": "suspend_test",
+               "resource_name": "PIC_LB_MEDIUM",
+               "type": "suspend",
+               "last_result": "PASS"
+           }
+       ]
+   },
+   {
+       "name": "ATP",
+       "testsuites": [
+           {
+               "name": "instance_creation",
+               "resource_name": "PIC_ATP_COMPUTE",
+               "type": "creation",
+               "last_result": "PASS"
+           },
+           {
+               "name": "suspend_test",
+               "resource_name": "PIC_ATP_COMPUTE",
+               "type": "suspend",
+               "last_result": "FAIL"
+           },
+           {
+               "name": "instance_deletion",
+               "resource_name": "PIC_ATP_COMPUTE",
+               "type": "deletion",
+               "last_result": "FAIL"
+           },
+           {
+               "name": "instance_creation",
+               "resource_name": "PIC_ATP_COMPUTE_2",
+               "type": "creation",
+               "last_result": "PASS"
+           },
+           {
+               "name": "suspend_test",
+               "resource_name": "PIC_ATP_COMPUTE_2",
+               "type": "suspend",
+               "last_result": "PASS"
+           },
+           {
+               "name": "instance_deletion",
+               "resource_name": "PIC_ATP_COMPUTE_2",
+               "type": "deletion",
+               "last_result": "PASS"
+           }
+       ]
+   }
+]

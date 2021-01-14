@@ -1,0 +1,378 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns1:InputParameters
+			xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/TAS/TAS_GSI_BRIDGE_PKG/ORDER_BOOKED/">
+			<ns1:I_ORDER>
+				<ns1:ORDER_NUMBER>2017051000002</ns1:ORDER_NUMBER>
+				<ns1:ORGANIZATION_ID>1001</ns1:ORGANIZATION_ID>
+				<ns1:ORDER_DATE>2017-04-19T20:18:05</ns1:ORDER_DATE>
+				<ns1:CUSTOMER_NAME>San Churro Inc</ns1:CUSTOMER_NAME>
+				<ns1:CUSTOMER_ACCT_NUMBER>16522082</ns1:CUSTOMER_ACCT_NUMBER>
+				<ns1:BUYER_EMAIL>opc-baremetals-qa_ww@oracle.com</ns1:BUYER_EMAIL>
+				<ns1:ACCOUNT_ADMIN_EMAIL>opc-baremetals-qa_ww@oracle.com
+				</ns1:ACCOUNT_ADMIN_EMAIL>
+				<ns1:CO_TERM_SUBSCRIPTION_ID />
+				<ns1:CSI_NUMBER>26897230</ns1:CSI_NUMBER>
+				<ns1:PROPERTIES>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>HEADERID</ns1:KEY>
+						<ns1:VALUE>53379068</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>TCA_PARTY_ID</ns1:KEY>
+						<ns1:VALUE>1046278818</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>BUYER_SSO_USERNAME</ns1:KEY>
+						<ns1:VALUE>opc-baremetals-qa_ww@oracle.com</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>BUYER_FIRST_NAME</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>BUYER_LAST_NAME</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>AA_FIRST_NAME</ns1:KEY>
+						<ns1:VALUE>Erick</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>AA_LAST_NAME</ns1:KEY>
+						<ns1:VALUE>Garza</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_ENGLISH_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+                    <ns1:KEY>SYSTEM_NAME_FOR_AUTO_COMP</ns1:KEY>
+                     <ns1:VALUE></ns1:VALUE>
+                     </ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>SALES_REPS</ns1:KEY>
+						<ns1:VALUE>ajay.b.kumar@oracle.com</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>SALES_CHANNEL</ns1:KEY>
+						<ns1:VALUE>FIELD-DIRECT</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_TYPE</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_PRIMARY_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_ADDRESS</ns1:KEY>
+						<ns1:VALUE>2029 Stierlin Ct Ste 200</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_CITY</ns1:KEY>
+						<ns1:VALUE>MOUNTAIN VIEW</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_STATE</ns1:KEY>
+						<ns1:VALUE>CA</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_ZIP</ns1:KEY>
+						<ns1:VALUE>94043</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_COUNTRY_CODE</ns1:KEY>
+						<ns1:VALUE>US</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$INCREMENTAL_PROPERTIES$$</ns1:KEY>
+						<ns1:VALUE>10000 REQUESTS PER MONTH|CURRENCY UNIT|GIGABYTE
+							OUTBOUND DATA TRANS PER MONTH|GIGABYTE STORAGE CAPACITY PER
+							MONTH|HOSTED ENVIRONMENT|LOAD BALANCER HOUR|NA|OCPU|OCPU PER
+							HOUR|PORT HOUR|RAVELLO COMPUTE HOUR|VIRTUAL MACHINE IP PER HOUR
+						</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$FS$$</ns1:KEY>
+						<ns1:VALUE>|</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$OM_ORDER_NUMBER$$</ns1:KEY>
+						<ns1:VALUE>9004715</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$OM_OPERATION_TYPE$$</ns1:KEY>
+						<ns1:VALUE>ONBOARDING</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>REKEY_TYPE</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>OVERAGEOPTED</ns1:KEY>
+						<ns1:VALUE>Y</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>IS_AUTO_RENEWED</ns1:KEY>
+						<ns1:VALUE>N</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$ORDER_CREATED_BY_AUTO_RENEWAL$$</ns1:KEY>
+						<ns1:VALUE>N</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>IS_SUBSCRIPTION_ENABLED</ns1:KEY>
+						<ns1:VALUE>Y</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>ACTIVATOR_EMAIL_ADDRESSES</ns1:KEY>
+						<ns1:VALUE>opc-baremetals-qa_ww@oracle.com</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>TAS_NOTIFICATION_RECIPIENTS</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$ORDER_SOURCE$$</ns1:KEY>
+						<ns1:VALUE>GSI</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CLOUD_AMOUNT_CURRENCY</ns1:KEY>
+						<ns1:VALUE>USD</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CLOUD_AMOUNT_CURRENCY_TO_USD_MULTIPLIER</ns1:KEY>
+						<ns1:VALUE>1</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>OPC_ACCOUNT_NAME</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>LICENSED_TO</ns1:KEY>
+						<ns1:VALUE>CUSTOMER</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMERS_CRM_CHOICE</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>IS_AUTO_CLOSE</ns1:KEY>
+						<ns1:VALUE>N</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>END_CUSTOMER_ACCOUNT_NUMBER</ns1:KEY>
+						<ns1:VALUE>16522082</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>END_CUSTOMER_PRIMARY_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>END_CUSTOMER_ENGLISH_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$ORDER_PAYLOAD_SOURCE$$</ns1:KEY>
+						<ns1:VALUE>SPS-SPS-SPS</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+				</ns1:PROPERTIES>
+				<ns1:DATA_CENTER_REGION_ID>US001</ns1:DATA_CENTER_REGION_ID>
+				<ns1:PROCESSING_DATE>2017-05-10</ns1:PROCESSING_DATE>
+				<ns1:LINE_ITEMS>
+					<ns1:LINE_ITEMS_ITEM>
+						<ns1:LINE_ID>1404434064</ns1:LINE_ID>
+						<ns1:SUBSCRIPTION_ID></ns1:SUBSCRIPTION_ID>
+						<ns1:START_DATE>2017-05-10T00:00:00</ns1:START_DATE>
+						<ns1:END_DATE>2018-05-10T00:00:00</ns1:END_DATE>
+						<ns1:OVERAGE_BILLED>N</ns1:OVERAGE_BILLED>
+						<PROPERTIES xmlns:ns12="http://xmlns.oracle.com/properties">
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>OPERATIONAL_POLICY</ns12:KEY>
+								<ns12:VALUE>ENTERPRISE</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>OVERAGE_THRESHOLD</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>OVERAGE_BILLING_TERM</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>$$REPLACE_ALL_SERVICE_COMPONENTS$$</ns12:KEY>
+								<ns12:VALUE>N</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>PRODUCT_RELEASE_VERSION</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>ADDITIONAL_INSTANCE_PRODUCT_RELEASE_VERSION</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>ENVIRONMENT_LANGUAGES</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>LANGUAGE_CODES</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>IDM_TYPE</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>ENVIRONMENT_COUNTRY</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>TAGS</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+						</PROPERTIES>
+						<ns1:SERVICE_GROUP_NAME>EXADATABM</ns1:SERVICE_GROUP_NAME>
+						<ns1:SERVICE_COMPONENTS>
+							<ns1:SERVICE_COMPONENTS_ITEM>
+								<ns1:COMPONENT_ID>7506616</ns1:COMPONENT_ID>
+								<ns1:PROPERTIES>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>IS_ADDITIONAL_INSTANCE</ns1:KEY>
+										<ns1:VALUE>N</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>IS_BASE_SERVICE_COMPONENT</ns1:KEY>
+										<ns1:VALUE>Y</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>METRIC_NAME</ns1:KEY>
+										<ns1:VALUE>HOSTED ENVIRONMENT</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>HOSTED ENVIRONMENT</ns1:KEY>
+										<ns1:VALUE>1</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+										<ns1:VALUE>Oracle Bare Metal Cloud Service - Database Exadata
+											Quarter Rack - X6 - Non-metered - Hosted Environment
+										</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+										<ns1:VALUE>Oracle Bare Metal Cloud Service - Database Exadata
+											Quarter Rack - X6 - Non-metered - Hosted Environment Product
+											Bundle v1
+										</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+								</ns1:PROPERTIES>
+								<ns1:SERVICE_COMPONENT_ID>B87871</ns1:SERVICE_COMPONENT_ID>
+								<ns1:LINE_ID>1404434064</ns1:LINE_ID>
+								<ns1:START_DATE>2017-05-10T00:00:00</ns1:START_DATE>
+								<ns1:END_DATE>2018-05-10T00:00:00</ns1:END_DATE>
+								<ns1:COMPONENTS>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506628</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Database
+													Exadata Quarter Rack - X6 - OCPU
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506629</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Database
+													Exadata Quarter Rack - X6- Gigabyte
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506630</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>TB OF STORAGE CAPACITY</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Database
+													Exadata Quarter Rack - X6 - TB of Storage Capacity
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+								</ns1:COMPONENTS>
+							</ns1:SERVICE_COMPONENTS_ITEM>
+						</ns1:SERVICE_COMPONENTS>
+					</ns1:LINE_ITEMS_ITEM>
+				</ns1:LINE_ITEMS>
+			</ns1:I_ORDER>
+		</ns1:InputParameters>
+	</soap:Body>
+</soap:Envelope>

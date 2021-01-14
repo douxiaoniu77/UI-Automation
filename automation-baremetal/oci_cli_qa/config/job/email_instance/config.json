@@ -1,0 +1,6 @@
+{
+   "compartment_id":"ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a",
+   "display_name": "sender_test_automation",
+   "server_name": "smtp.us-ashburn-1.oraclecloud.com",
+   "number": "10"
+}

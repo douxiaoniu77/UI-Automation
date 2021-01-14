@@ -1,0 +1,146 @@
+{
+   "name": "Sample Test Suite for Load Balancer XD",
+   "endpoints": [
+      {
+         "name": "IAAS_VCN",
+         "uri": "https://iaas.r1.oracleiaas.com/20160918/vcns",
+         "$$hashKey": "object:5"
+      },
+      {
+         "name": "IAAS_SUBNET",
+         "uri": "https://iaas.r1.oracleiaas.com/20160918/subnets",
+         "$$hashKey": "object:6"
+      },
+      {
+         "name": "IAAS_LB",
+         "uri": "https://iaas.r1.oracleiaas.com/20170115/loadBalancers",
+         "$$hashKey": "object:7"
+      },
+      {
+         "name": "IAAS_COMPUTE",
+         "uri": "https://iaas.r1.oracleiaas.com/20160918/instances",
+         "$$hashKey": "object:8"
+      },
+      {
+         "name": "DATABASE_ADWC",
+         "uri": "https://database.r1.oracleiaas.com/20160918/autonomousDataWarehouses",
+         "$$hashKey": "object:9"
+      }
+        
+   ],
+   "accounts": [
+      {
+         "name": "main_account",
+         "tenancy_ocid": "ocid1.tenancy.region1..aaaaaaaahlbyul2aczinkrhxsorijerlxzwpydcytikifpgsuetruer7onkq",
+         "user_ocid": "ocid1.user.region1..aaaaaaaaz6zlq34fcctbpyvymnfsllipbaih6myvgopmafmox6kldcp2dcba",
+         "api_footprint": "77:ef:cb:95:d4:c4:11:6e:fc:94:fb:39:14:2e:c4:fd",
+         "api_privatekey": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEArnN6P429O2xyL5sC1Cc7mu5Dg8dqwfUeNSL5aLXvsTHjQyNi\nWjQMw2KNZUxwVe70nxRH5L6oz1ALiPhXCTCnKlIonQs6yabsDLVHyqhI4J4LGxhp\nTDXeZoq8yDrrgcaxs9v4qkpUwIYqutviTe5bbklq/wTJJ8kYUhwZfr/aTKPpcWap\nZg8unYXmSzrFTkWs099i0uRdAmY0EtG5sOe6md+Mj7kNOhCOMW3LsCoPAY7CtXd5\nknSPY7xzUKneL9sn3qUEGDRlsj9Bd+MHotoobS0unjERYd39/Xu4v5ZbGXtkPCUL\nPmf6vo+9R5uOGvhcwaWY4KWrlPVnLHR2fNR36wIDAQABAoIBAFf0yzdN7JIQfIX6\nHvP+j/Pum8XOfsoqHz/lUWD1ElQB9ja8mXMneSPuBaKEZsM9BsNKQ3FWm+Bi2F4H\n8EIm8LHK2MVNiydu7Ob/Y6IPNSdjJ/BSX4zYQDjtTH+cDW/SUXiAuSCK965WNycd\nhD2Mpza096h6rj1MC+IiXsxkSNmImfKMTrbGEN3Dji1uYwwU2QarSTjaUY6bJT4/\npkJinkEHYC0OmQENwgpUvsPCNJxZYRWBEiLMC3e58YdaO3dqRahnweAcDxSKrBbk\nFD8q0hbLKP+SQv+V5k+4Yzt3aGx1/g+XjYBlA+5mQ3c1tO4ysyndLMK1117eZ/ei\nEPiUfckCgYEA3RCS6SCKTTaRV8OENUifHfQn6PFp9lSdWezmAbXCbtq5vRn/hQid\n8COqBuvVUqBVPgUK/qfZ04WHZzyvnWXmENRkQkMkvj/lGi7uiEKs02l4EDVsgMoo\nJ38VQKntqYHrp4IIYesjExXS6TdWNFM7A2ecMAgAVMbpkR/n6DrWc58CgYEAygUY\nUm1ZvsulYr3RMdkKm7UcY0u5Dz3KD9nBkYWz3C2NWpfwegaVL5jlSJImmsBdI0vm\nJEEOolWF4eYBf5W/x23vw0g2Y9hjbhez+bjUutusoRCZeArC3LfJxtLJFjei/lAJ\nVKtA17wey9r1ivZEIQ/YIXg5SsZ4jsuOH65EeDUCgYEA1I7GI6ClOp74W4HkUnOU\ng3GrGkFeWHt9nOS7N/Ozk3F+XIRt+1WQv0EbkHIceMkvjWW976QnP0pKKorgdSBw\necgu6sOyxbecK3Pq6Vvq35Cu4C7uOFupBmkcX0PFAFKq6zKNqtEztXsrhBEwMznA\nKYLrXAelgd6M4HzkOJiycRMCgYEAqAQ4yEUeAOsKL+dC1zx18C5e386YqS5woWIv\n9UHH5vUTvSbk3/gdl6qH9yVmagpW7AYx8DETZLvQT6Kl2GDJUaoDYNzsL3pGp8ea\n7bRlaMtO9d4CZa49hqhsbqnciFfZfb0/JWYQ1dwlmNIQqXRMEVtGHAALVj9fARQW\nrg6X74kCgYEAxPYfdczstaNQN7aVFWyYxPVXmbdgPl9txOrlL7zqESTn43REirGf\nIwFf41nBNQ/4fdyKRL8x15K0cEJyinw+2NSxfkRXZsD0N2t1Ti62zEcReTRo3gL3\nMciSFyYf1XTFYX7/wQ2SFTCFdoRb83t1c/2zHakhipuIcvyNj7ziDSM=\n-----END RSA PRIVATE KEY-----",
+         "$$hashKey": "object:11"
+      }
+   ],
+   "tests": [
+      {
+         "name": "TEST_LIST_VCN",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_VCN",
+            "header": {
+               "compartmentId": "ocid1.tenancy.region1..aaaaaaaahlbyul2aczinkrhxsorijerlxzwpydcytikifpgsuetruer7onkq"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:15"
+      },
+      {
+         "name": "TEST_LIST_ADW",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "DATABASE_ADWC",
+            "header": {
+               "compartmentId": "ocid1.tenancy.region1..aaaaaaaahlbyul2aczinkrhxsorijerlxzwpydcytikifpgsuetruer7onkq"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:15"
+      },
+      {
+         "name": "TEST_LIST_SUBNET",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_SUBNET",
+            "header": {
+               "compartmentId": "ocid1.tenancy.region1..aaaaaaaahlbyul2aczinkrhxsorijerlxzwpydcytikifpgsuetruer7onkq",
+               "vcnId": "ocid1.vcn.oc1.sea.aaaaaaaawmb6mqfgpeq5qaygmglqufd3mp3gpo7k3dcy6k6vonlvmxvnvf6a"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:16"
+      },
+      {
+         "name": "TEST_LIST_LB_BEFORE",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_LB",
+            "header": {
+               "compartmentId": "ocid1.tenancy.region1..aaaaaaaahlbyul2aczinkrhxsorijerlxzwpydcytikifpgsuetruer7onkq"
+            },
+            "request_type": "GET",
+            "expected_response": "200",
+            "path": {},
+            "body": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:17"
+      },
+      {
+         "name": "TEST_CREATE_VNC",
+         "type": "REST_CALL",
+         "details": {
+            "account": "main_account",
+            "endpoint": "IAAS_VCN",
+            "body": {
+               "compartmentId": "ocid1.tenancy.region1..aaaaaaaahlbyul2aczinkrhxsorijerlxzwpydcytikifpgsuetruer7onkq",
+               "displayName": "REST_API_VCN_T1",
+               "cidrBlock" : "10.0.0.0/16"
+            },
+            "request_type": "POST",
+            "expected_response": "200",
+            "path": {},
+            "header": {},
+            "wait_time": ""
+         },
+         "$$hashKey": "object:18"
+      },
+      {
+         "name": "WAIT_SERVICE_PROVISIONING",
+         "type": "WAIT",
+         "details": {
+            "wait_time": "1",
+            "account": "",
+            "endpoint": "",
+            "path": {},
+            "header": {},
+            "body": {},
+            "request_type": "",
+            "expected_response": ""
+         },
+         "$$hashKey": "object:19"
+      }
+   ]
+}

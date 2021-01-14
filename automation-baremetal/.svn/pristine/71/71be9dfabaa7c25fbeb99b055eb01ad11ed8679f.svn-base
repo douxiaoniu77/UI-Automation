@@ -1,0 +1,3 @@
+#foreach ($suite in $suites)
+$subjects.get($suite.name)
+#end

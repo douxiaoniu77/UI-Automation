@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_PortalSanity_Migration">
+	<parameter name="cloudAdmurl" value="" />
+        <test name="BareMetal_SanityTest_MyAccount_MBE_Migration"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+					<include name="MyAccount_Login"/>
+					<include name="BM_MyAccount_Dashboard_MBE_List"/>
+					<include name="BM_MyAccount_Dashboard_MBE_Subscription"/>
+					<include name="BMDB_MyAccount_Subscription"/>
+					<include name="BMExadata_MBE_MyAccount_Subscription"/>
+					<include name="BM_MyAccount_MBE_Status"/>
+					<include name="BM_MyAccount_Estimate_Balance"/>
+					<include name="BMDB_Account_Balance_MyAccount"/>
+					<include name="BMExadata_MBE_Account_Balance_MyAccount"/>
+					<include name="BM_MyAccount_ViewDetails"/>
+					<include name="BMDB_MyAccount_ViewDetails"/>
+					<include name="BMExadata_MBE_MyAccount_ViewDetails"/>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	<test name="BareMetal_SanityTest_MyAccount_SBE_Migration"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+					<include name="MyAccount_Login"/>
+					<include name="BMDB_SBE_Account_Quota_MyAccount"/>
+					<include name="BMDB_SBE_MyAccount_Subscription"/>
+					<include name="BMDB_SBE_MyAccount_ViewDetails"/>
+					<include name="BMExadata_SBE_MyAccount_Subscription"/>
+					<include name="BMExadata_SBE_MyAccount_ViewDetails"/>
+					<include name="BMExadata_SBE_Account_Quota_MyAccount"/>			
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+        <test name="BareMetal_SanityTest_MBE_Account_Balance"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+					<include name="MBE_MyService_Login"/>
+					<include name="BM_MBE_Account_Balance_MyService"/>
+					<include name="BMExadata_MBE_Account_Balance_MyService"/>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	<test name="BareMetal_SanityTest_MyServices_MBE_Migration"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+					<include name="MBE_MyService_Login"/>
+					<include name="BM_MyService_MBE_Subscription"/>
+					<include name="BMDB_MyService_Subscription"/>
+					<include name="BMExadata_MyService_Subscription"/>
+					<include name="BM_MyService_MBE_Status"/> 
+					<include name="BM_MyService_ViewDetails" />
+					<include name="BMDB_MyService_ViewDetails" /> 
+					<include name="BMExadata_MBE_MyService_ViewDetails"/>
+					<include name="BM_MyService_ViewDetails_SFTP"/>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	<test name="BareMetal_SanityTest_MyServices_SBEDB_Migration"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+				<include name="BMDB_SBE_MyService_Login"/>
+				<include name="BMDB_SBE_Account_Quota_MyService"/>
+				<include name="BMDB_SBE_MyService_Subscription"/>
+				<include name="BMDB_SBE_MyService_ViewDetails"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BareMetal_SanityTest_MyServices_SBEExadata_Migration"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMSanityTest">
+				<methods>
+				<include name="BMExadata_SBE_MyService_Login"/>
+				<include name="BMExadata_SBE_MyService_Subscription"/>
+				<include name="BMExadata_SBE_Account_Quota_MyService"/>	
+				<include name="BMExadata_SBE_MyService_ViewDetails"/>		
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

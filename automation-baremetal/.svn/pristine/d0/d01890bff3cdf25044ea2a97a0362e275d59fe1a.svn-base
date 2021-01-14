@@ -1,0 +1,10 @@
+{
+    "display_name": "FS_Automation",
+    "mount_target_name": "MT_Automation",
+    "instance_name": "VM.Standard2.2_AUTOMATION",
+    "vcn": "PAAS_VCN",
+    "availability_domain" : "AD-2",
+    "ssh_key": "config/SSH_KEY",
+    "ammount": 256,
+    "compartment": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a"
+}

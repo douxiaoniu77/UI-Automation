@@ -1,0 +1,19 @@
+{
+    "availability_domain": "AD-3",
+    "compartment": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a",
+    "cpu_core_count": 1,
+    "new_cpu_core_count": 2,
+    "database_edition": "ENTERPRISE_EDITION",
+    "display_name": "BACKUP_TEST_INSTANCE",
+    "hostname": "PIC",
+    "vcn": "PAAS_VCN",
+    "shape": "VM.Standard1.1",
+    "ssh_key": "config/SSH_KEY",
+    "admin_password": "aaaBBB111###",
+    "db_name": "testdebe",
+    "db_version": "12.2.0.1.170117",
+    "license_model": "LICENSE_INCLUDED",
+    "initial_data_storage_size_in_gb": 256,
+    "new_data_storage_size_in_gb": 512,
+    "node_count": 1
+}

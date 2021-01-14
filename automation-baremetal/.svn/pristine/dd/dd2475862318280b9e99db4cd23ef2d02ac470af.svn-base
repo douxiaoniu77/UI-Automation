@@ -1,0 +1,4 @@
+{
+    "create_lb": true,
+    "terminate_lb": true
+}

@@ -1,0 +1,123 @@
+'''
+Created on Jan 3, 2019
+@author: umartine
+
+===============================================================================
+                                Change log
+===============================================================================
+
+    Date         GUID        Comment
+    ---------------------------------------------------------------------------
+    2019-01-03   umartine    Initial creation
+
+-------------------------------------------------------------------------------
+                                 Load Modules
+-------------------------------------------------------------------------------
+'''
+
+import json
+import pytest
+
+import oci_cli_qa.lib.configuration as configuration
+
+from oci_cli_qa.lib.runner import run_command
+from oci_cli_qa.lib.logger import LOG
+from oci_cli_qa.test.compute import COMPUTE_OPS
+from oci_cli_qa.test.load_balancer import LOAD_BALANCER_OPS
+from oci_cli_qa.test.fast_connect import FAST_CONNECT_OPS
+from oci_cli_qa.test.auxiliar import AUXILIAR_OPS, create_vcn
+
+from oci_cli_qa.platform.compartment_prereqs import set_single_compartment_prereqs
+
+'''
+-------------------------------------------------------------------------------
+                            Load Configurations
+-------------------------------------------------------------------------------
+'''
+# Load Configurations
+# ------------------------------------------------------------------------------
+RESOURCE_LIST = ["AUXILIAR", "COMPUTE", "LOAD_BALANCER", "FAST_CONNECT"]
+RESOURCES = {resource: {} for resource in RESOURCE_LIST}
+AUX_RN, COMPUTE_RN, LB_RN, FC_RN = RESOURCE_LIST
+# Operation types
+CONSUME = ["CREATE", "UPSIZE", "FUNCTIONAL", "DELAY"]
+RELEASE = ["DOWNSIZE", "TERMINATE"]
+
+TEST_CONFIGURATION_JSON = "test/config/test_config.json"
+TEST_CONFIG = json.load(open(TEST_CONFIGURATION_JSON))
+RESOURCES["AUXILIAR"]["CFG"] = TEST_CONFIG
+RESOURCES["AUXILIAR"]["OPERATIONS"] = AUXILIAR_OPS
+
+# Load Compute Configuration
+INSTANCE_CONFIGURATION_JSON = "config/job/compute_instance/config.json"
+RESOURCES["COMPUTE"]["CFG"] = json.load(open(INSTANCE_CONFIGURATION_JSON))
+RESOURCES["COMPUTE"]["OPERATIONS"] = COMPUTE_OPS
+
+# Load LB Configuration
+LB_CONFIGURATION_JSON = "config/job/load_balancer/config.json"
+RESOURCES["LOAD_BALANCER"]["CFG"] = json.load(open(LB_CONFIGURATION_JSON))
+RESOURCES["LOAD_BALANCER"]["OPERATIONS"] = LOAD_BALANCER_OPS
+
+# Load LB Configuration
+FC_CONFIGURATION_JSON = "config/job/fast_connect/config.json"
+RESOURCES["FAST_CONNECT"]["CFG"] = json.load(open(FC_CONFIGURATION_JSON))
+RESOURCES["FAST_CONNECT"]["OPERATIONS"] = FAST_CONNECT_OPS
+
+# Configuration steps
+# ------------------------------------------------------------------------------
+#run_command("mkdir test_results")
+run_command("mkdir test_results".split())
+CONFIG = configuration.load_configuration()
+create_vcn(CONFIG)
+
+
+'''
+-------------------------------------------------------------------------------
+                            Test suite
+-------------------------------------------------------------------------------
+'''
+
+RESOURCE_AD_MAPPING = {
+    "VM.Standard2.2":   "AD-1",
+    "BM.GPU2.2":        "AD-3",
+    "BM.Standard2.52":  "AD-2",
+    "BM.GPU3.8":        "AD-2",
+    "BM.DenseIO2.52":   "AD-1",
+    "BM.HPC2.36":       "AD-1",
+    "BM.Standard.E2.64":"AD-3"
+}
+
+
+TEST_COMPARTMENT_01_TESTSUITE = [
+     ("VM.Standard2.2", COMPUTE_RN)
+]
+
+
+'''
+-------------------------------------------------------------------------------
+                        Test runners
+-------------------------------------------------------------------------------
+'''
+
+@pytest.mark.parametrize("shape,resource", TEST_COMPARTMENT_01_TESTSUITE)
+def test_case_01(shape, resource):
+    LOG.info("[TEST] Starting test 01 for '{0}'".format(shape))
+    # Setup Compartment configuration
+    compartment_id = set_single_compartment_prereqs(CONFIG)
+
+    # Pre-config test
+    instance_cfg = dict(RESOURCES[resource]["CFG"])
+    instance_cfg["shape"] = shape
+    instance_cfg["display_name"] = "{0}_PLATFORM".format(shape)
+    instance_cfg["compartment"] = compartment_id
+
+    if "availability_domain" in instance_cfg:
+        instance_cfg["availability_domain"] = RESOURCE_AD_MAPPING[shape]
+
+    #Run operation
+    operation_runner = RESOURCES[resource]["OPERATIONS"]["CREATE"]
+    operation_runner(CONFIG, instance_cfg)
+
+    # Report Result
+    open("test_results/{0}.suc".format(shape), 'a').close()
+    LOG.info("[TEST] Finishing test 01 for '{0}'".format(shape))

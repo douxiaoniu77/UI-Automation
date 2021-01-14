@@ -1,0 +1,13 @@
+{
+    
+    "drg_display_name": "automation_drg",
+    "provider_id": "ocid1.providerservice.region1.sea.aaaaaaaaliruwevfk5bratw2jkdl4exg5az246lqiwhk6i2abv5tvs42yxiq",
+    "display_name": "automation_fc",
+    "provisioned_bandwidth": "1 Gbps",
+    "curstomer_bigip_address": "10.0.0.18/31",
+    "oracle_bigip_address": "10.0.0.19/31",
+    "customer_bgp_asn": "123",
+    "type": "PRIVATE"
+   
+    
+}

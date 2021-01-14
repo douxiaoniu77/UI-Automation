@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="testsuiteApp" ng-controller="testsuiteController">
+			<h1>{{ testsuite.name }}</h1>
+			<a href="index.html">Back to Dashboard</a>
+
+			<!-- DEBUG: ENDPOINT LIST SECTION -->
+			<div class="testsuite_section">
+				<h2>Endpoints</h2>
+				<table>
+					<tr class="testsuite_table">
+						<th>Name</th>
+						<th>URI</th>
+						<th></th>
+					</tr>
+					<tr ng-repeat="endpoint in testsuite.endpoints" class="testsuite_table">
+						<td><input type="text" ng-model="endpoint.name"></td>
+						<td><input type="text" ng-model="endpoint.uri" class="testsuite_endpoint_uri"></td>
+						<td>
+							<button ng-click="removeEndpoint(endpoint)">Remove</button>
+						</td>
+					</tr>
+					<tr class="testsuite_table">
+						<td><input type="text" ng-model="new_endpoint.name"></td>
+						<td><input type="text" ng-model="new_endpoint.uri" class="testsuite_endpoint_uri"></td>
+						<td><button ng-click="addEndpoint()">Add</button></td>
+					</tr>
+				</table>
+			</div>
+
+
+			<!-- DEBUG: ACCOUNT LIST SECTION -->
+			<div class="testsuite_section">
+				<h2>Accounts</h2>
+				<div class="testsuite_list_panel">
+					<button ng-click="addAccount()">New Account</button>
+					<ul>
+						<li ng-repeat="account in testsuite.accounts">
+							<a href="#" ng-click="showAccount(account)">{{account.name}}</a>
+						</li>
+					</ul>
+				</div>
+				<div class="testsuite_details_panel">
+					<table class="testsuite_table">
+						<tr class="testsuite_table">
+							<th>Key</th>
+							<th>Value</th>
+						</tr>
+						<tr class="testsuite_table">
+							<th>Name</th>
+							<td><input type="text" ng-model="current_account.name" class="testsuite_account_input"></td>
+						</tr>
+						<tr class="testsuite_table">
+							<th>Tenancy OCID</th>
+							<td><input type="text" ng-model="current_account.tenancy_ocid" class="testsuite_account_input"></td>
+						</tr>
+						<tr class="testsuite_table">
+							<th>User OCID</th>
+							<td><input type="text" ng-model="current_account.user_ocid" class="testsuite_account_input"></td>
+						</tr>
+						<tr class="testsuite_table">
+							<th>API Key Footprint</th>
+							<td><input type="text" ng-model="current_account.api_footprint" class="testsuite_account_input"></td>
+						</tr>
+						<tr class="testsuite_table">
+							<th>API Private Key</th>
+							<td><textarea ng-model="current_account.api_privatekey" class="testsuite_account_pk_input"></textarea></td>
+						</tr>
+						<tr class="testsuite_table">
+							<th></th>
+							<td><button ng-click="removeAccount(current_account)">Remove</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+
+			<!-- DEBUG: TESTCASE LIST SECTION -->
+			<div class="testsuite_section">
+				<h2>Test Case Section</h2>
+				<div class="testsuite_list_panel">
+					<button ng-click="addTest()">New Test</button>
+					<ul>
+						<li ng-repeat="test in testsuite.tests">
+							<a href="" ng-click="showTest(test)">{{test.name}}</a>
+						</li>
+					</ul>
+				</div>
+				<div class="testsuite_details_panel">
+					<table class="testsuite_table">
+						<tr class="testsuite_table">
+							<th>Key</th>
+							<th>Value</th>
+						</tr>
+						<!-- Test name configurations -->
+						<tr class="testsuite_table">
+							<th>Name</th>
+							<td><input type="text" ng-model="current_test.name" class="testsuite_account_input"></td>
+						</tr>
+						<!-- Test type configurations -->
+						<tr class="testsuite_table">
+							<th>Test Type</th>
+							<td><select ng-model="current_test.type" ng-change="showTest(current_test)">
+							      <option value="{{ test_type }}" ng-repeat="test_type in test_types">{{ test_type }}</option>
+							    </select>
+							</td>
+						</tr>
+						<!-- Account configurations -->
+						<tr ng-repeat="key in current_test_details | filter:isKeyAccount" class="testsuite_table">
+							<th>{{ key }}</th>
+							<td><select ng-model="current_test.details[key]">
+							      <option value="{{ account.name }}" ng-repeat="account in testsuite.accounts">{{ account.name }}</option>
+							    </select>
+							</td>
+						</tr>
+						<!-- Endpoint configurations -->
+						<tr ng-repeat="key in current_test_details | filter:isKeyEndpoint" class="testsuite_table">
+							<th>{{ key }}</th>
+							<td><select ng-model="current_test.details[key]">
+							      <option value="{{ endpoint.name }}" ng-repeat="endpoint in testsuite.endpoints">{{ endpoint.name }}</option>
+							    </select>
+							</td>
+						</tr>
+						<!-- Request configurations -->
+						<tr ng-repeat="key in current_test_details | filter:isKeyRequestType" class="testsuite_table">
+							<th>{{ key }}</th>
+							<td><select ng-model="current_test.details[key]">
+							      <option value="{{ request_type }}" ng-repeat="request_type in request_types">{{ request_type }}</option>
+							    </select>
+							</td>
+						</tr>
+						<!-- Regular string configurations -->
+						<tr ng-repeat="key in current_test_details | filter:isKeyString" class="testsuite_table">
+							<th>{{ key }}</th>
+							<td><input type="text" ng-model="current_test.details[key]" class="testsuite_account_input"></td>
+						</tr>
+						<!-- Payload section -->
+						<tr ng-repeat="key in current_test_details | filter:isKeyJson" class="testsuite_table">
+							<th>{{ key }}</th>
+							<td><textarea ng-blur="updateJsonDetails(current_test.type)" ng-model="current_test_payloads_details[key]" class="testsuite_account_pk_input"></textarea></td>
+						</tr>
+						<tr class="testsuite_table">
+							<th></th>
+							<td><button ng-click="removeTest(current_test)">Remove</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- DEBUG: TESTSUITE OUTPUT SECTION -->
+			<div class="testsuite_section">
+				<h2>Test Suite Output</h2>
+				<button id="testsuite_launch" ng-click="launchJob()">Launch Job</button>
+				<div id="testsuite_status" class="testsuite_output">
+					<pre>Preparing</pre>
+				</div>
+				<div class="testsuite_output">
+					<pre>{{ printJson(testsuite) }}</pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- DEBUG: JAVASCRIPT CODE -->
+		<script type="text/javascript" src="testsuite.js"></script>
+	</body>
+</html>

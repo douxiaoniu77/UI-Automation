@@ -1,0 +1,30 @@
+{
+       "name": "Load Balancer",
+       "testsuites": [
+           {
+               "name": "instance_creation",
+               "resource_name": "PIC_LB_SMALL",
+               "type": "creation",
+               "last_result": "PASS"
+           },
+           {
+               "name": "instance_deletion",
+               "resource_name": "PIC_LB_SMALL",
+               "type": "deletion",
+               "last_result": "PASS"
+           },
+           {
+               "name": "instance_creation",
+               "resource_name": "PIC_LB_MEDIUM",
+               "type": "creation",
+               "last_result": "PASS"
+           },
+           {
+               "name": "suspend_test",
+               "resource_name": "PIC_LB_MEDIUM",
+               "type": "suspend",
+               "last_result": "PASS"
+           }
+       ]
+   }
+ 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_MBE_Migration">
+	<parameter name="cloudAdmurl" value="" />
+	
+		<test name="BareMetal_MBE_DB_Metering_MyAccount"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMDBMeteringTest">
+				<methods>
+				<include name="BMDB_MBE_MyAccount_Metering"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_STANDARD_HIGH_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_STANDARD_DENSE_IO"/>
+				<include name="BM_MyAccount_Metering_PIC_DATABASE_STANDARD_ADDITIONAL_CAPACITY"/>
+				
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_DENSE_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_ADDITIONAL_CAPACITY"/>
+				
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_PERFORMANCE_HIGH_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_PERFORMANCE_DENSE_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_PERFORMANCE_ADDITIONAL_CAPACITY"/>
+				
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_EXTREME_PERFORMANCE_HIGH_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_EXTREME_PERFORMANCE_DENSE_IO"/>
+				<include name="BMDB_MyAccount_MBE_Metering_PIC_DATABASE_ENTERPRISE_EXTREME_PERFORMANCE_ADDITIONAL_CAPACITY"/>
+				
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="BareMetal_MBE_DB_Metering_MyServices"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMDBMeteringTest">
+				<methods>
+				
+				<include name="BMDB_MBE_MyService_Metering"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_STANDARD_HIGH_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_STANDARD_DENSE_IO"/>
+				<include name="BM_MyService_Metering_PIC_DATABASE_STANDARD_ADDITIONAL_CAPACITY"/>
+				
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_DENSE_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_ADDITIONAL_CAPACITY"/>
+				
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_PERFORMANCE_HIGH_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_PERFORMANCE_DENSE_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_HIGH_PERFORMANCE_ADDITIONAL_CAPACITY"/>
+				
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_EXTREME_PERFORMANCE_HIGH_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_EXTREME_PERFORMANCE_DENSE_IO"/>
+				<include name="BMDB_MyServices_MBE_Metering_PIC_DATABASE_ENTERPRISE_EXTREME_PERFORMANCE_ADDITIONAL_CAPACITY"/>
+				
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+		<!-- <test name="BareMetal_MIG_MeteringTest"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMDBMeteringTest">
+				<methods>	
+				
+	
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+
+	
+</suite>

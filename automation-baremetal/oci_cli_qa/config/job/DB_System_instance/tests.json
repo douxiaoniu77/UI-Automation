@@ -1,0 +1,11 @@
+{
+    "create_instance": 0,    
+    "update_instance" : 0,
+    "terminate_instance": 0,
+    "functional_test": 0,
+    "create_backup": 0,
+    "terminate_backup": 0,
+    "restore_backup": 0,
+    "list_records": 1,
+    "add_records": 0
+}

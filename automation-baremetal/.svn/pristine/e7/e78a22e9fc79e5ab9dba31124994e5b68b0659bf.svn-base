@@ -1,0 +1,10 @@
+{
+    "CREATE": true,
+    "TERMINATE": true,
+    "FUNCTIONAL": true,
+    "LIFE_SPAN": 65,
+    "INSTANCE_SSH_WAIT": 10,
+    "USAGE": true,
+    "BILLING": true,
+    "SERVICE": "COMPUTE"
+}

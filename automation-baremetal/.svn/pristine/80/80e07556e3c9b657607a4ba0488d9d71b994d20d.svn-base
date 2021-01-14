@@ -1,0 +1,47 @@
+'''
+Created on May 17, 2018
+
+@author: umartine
+
+===============================================================================
+                                Change log
+===============================================================================
+
+    Date         GUID        Comment
+    ---------------------------------------------------------------------------
+    2018-05-17   umartine    Initial creation
+    2018-05-24   umartine    Generalizing get IP flow
+    2018-05-01   umartine    Fixing Compartment ID from functional flow
+    2018-06-11   umartine    Removing unused libs
+    2018-11-21   umartine    Adding create fake instance features
+    2018-12-05   umartine    Support for compartment selection
+    2018-12-06   umartine    Fix in compartment selection
+
+'''
+
+import oci_cli_qa.lib.operations.compute as compute
+
+from oci_cli_qa.lib.runner import run_command_paramiko
+
+def create_instance(config, instance_cfg):
+    compute.create_instance(config, instance_cfg)
+
+def create_instance_fake(config, instance_cfg):
+    compute.create_instance(config, instance_cfg, fake_instance = True)
+
+def compute_functional_instance(config, instance_cfg):
+    instance_name = instance_cfg["display_name"]
+    ip_address = compute.get_instance_public_ip(config, instance_cfg["compartment"], instance_name)
+    cmd_output = run_command_paramiko(ip_address, instance_cfg["ssh_key"], "ls")
+    assert cmd_output["rc"] == 0
+
+
+def termiante_instance(config, instance_cfg):
+    compute.terminate_instante(config, instance_cfg)
+
+
+COMPUTE_OPS = {"CREATE":     create_instance,
+               "FUNCTIONAL": compute_functional_instance,
+               "TERMINATE":  termiante_instance,
+               "CREATE_FAKE":     create_instance_fake
+               }

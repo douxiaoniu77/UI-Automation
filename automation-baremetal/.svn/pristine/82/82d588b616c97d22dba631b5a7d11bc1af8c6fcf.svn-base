@@ -1,0 +1,6 @@
+{
+   "create_instance": 0,   
+   "send_emails": 1, 
+   "terminate_instance" : 1
+   
+}

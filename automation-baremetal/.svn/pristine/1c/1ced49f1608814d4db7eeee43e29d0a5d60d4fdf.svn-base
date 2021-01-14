@@ -1,0 +1,1333 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns1:InputParameters
+			xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/TAS/TAS_GSI_BRIDGE_PKG/ORDER_BOOKED/">
+			<ns1:I_ORDER>
+				<ns1:ORDER_NUMBER>9004715c2000602c11</ns1:ORDER_NUMBER>
+				<ns1:ORGANIZATION_ID>1001</ns1:ORGANIZATION_ID>
+				<ns1:ORDER_DATE>2017-04-19T20:18:05</ns1:ORDER_DATE>
+				<ns1:CUSTOMER_NAME>San Churro Inc.</ns1:CUSTOMER_NAME>
+				<ns1:CUSTOMER_ACCT_NUMBER>16522082</ns1:CUSTOMER_ACCT_NUMBER>
+				<ns1:BUYER_EMAIL>opc-baremetals-qa_ww@oracle.com</ns1:BUYER_EMAIL>
+				<ns1:ACCOUNT_ADMIN_EMAIL>opc-baremetals-qa_ww@oracle.com
+				</ns1:ACCOUNT_ADMIN_EMAIL>
+				<ns1:CO_TERM_SUBSCRIPTION_ID />
+				<ns1:CSI_NUMBER>26897230</ns1:CSI_NUMBER>
+				<ns1:PROPERTIES>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>HEADERID</ns1:KEY>
+						<ns1:VALUE>53379068</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>TCA_PARTY_ID</ns1:KEY>
+						<ns1:VALUE>1046278818</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>BUYER_SSO_USERNAME</ns1:KEY>
+						<ns1:VALUE>opc-baremetals-qa_ww@oracle.com</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>BUYER_FIRST_NAME</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>BUYER_LAST_NAME</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>AA_FIRST_NAME</ns1:KEY>
+						<ns1:VALUE>Erick</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>AA_LAST_NAME</ns1:KEY>
+						<ns1:VALUE>Garza</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_ENGLISH_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>SALES_REPS</ns1:KEY>
+						<ns1:VALUE>ajay.b.kumar@oracle.com</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>SALES_CHANNEL</ns1:KEY>
+						<ns1:VALUE>FIELD-DIRECT</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_TYPE</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_PRIMARY_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_ADDRESS</ns1:KEY>
+						<ns1:VALUE>2029 Stierlin Ct Ste 200</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_CITY</ns1:KEY>
+						<ns1:VALUE>MOUNTAIN VIEW</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_STATE</ns1:KEY>
+						<ns1:VALUE>CA</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_ZIP</ns1:KEY>
+						<ns1:VALUE>94043</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMER_COUNTRY_CODE</ns1:KEY>
+						<ns1:VALUE>US</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$INCREMENTAL_PROPERTIES$$</ns1:KEY>
+						<ns1:VALUE>10000 REQUESTS PER MONTH|CURRENCY UNIT|GIGABYTE
+							OUTBOUND DATA TRANS PER MONTH|GIGABYTE STORAGE CAPACITY PER
+							MONTH|HOSTED ENVIRONMENT|LOAD BALANCER HOUR|NA|OCPU|OCPU PER
+							HOUR|PORT HOUR|RAVELLO COMPUTE HOUR|VIRTUAL MACHINE IP PER HOUR
+						</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$FS$$</ns1:KEY>
+						<ns1:VALUE>|</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$OM_ORDER_NUMBER$$</ns1:KEY>
+						<ns1:VALUE>9004715</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$OM_OPERATION_TYPE$$</ns1:KEY>
+						<ns1:VALUE>ONBOARDING</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>REKEY_TYPE</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>OVERAGEOPTED</ns1:KEY>
+						<ns1:VALUE>Y</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>IS_AUTO_RENEWED</ns1:KEY>
+						<ns1:VALUE>N</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$ORDER_CREATED_BY_AUTO_RENEWAL$$</ns1:KEY>
+						<ns1:VALUE>N</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>IS_SUBSCRIPTION_ENABLED</ns1:KEY>
+						<ns1:VALUE>Y</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>ACTIVATOR_EMAIL_ADDRESSES</ns1:KEY>
+						<ns1:VALUE>opc-baremetals-qa_ww@oracle.com</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>TAS_NOTIFICATION_RECIPIENTS</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$ORDER_SOURCE$$</ns1:KEY>
+						<ns1:VALUE>GSI</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CLOUD_AMOUNT_CURRENCY</ns1:KEY>
+						<ns1:VALUE>USD</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CLOUD_AMOUNT_CURRENCY_TO_USD_MULTIPLIER</ns1:KEY>
+						<ns1:VALUE>1</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>OPC_ACCOUNT_NAME</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>LICENSED_TO</ns1:KEY>
+						<ns1:VALUE>CUSTOMER</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>CUSTOMERS_CRM_CHOICE</ns1:KEY>
+						<ns1:VALUE />
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>IS_AUTO_CLOSE</ns1:KEY>
+						<ns1:VALUE>N</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>END_CUSTOMER_ACCOUNT_NUMBER</ns1:KEY>
+						<ns1:VALUE>16522082</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>END_CUSTOMER_PRIMARY_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>END_CUSTOMER_ENGLISH_NAME</ns1:KEY>
+						<ns1:VALUE>San Churro Inc.</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+					<ns1:PROPERTIES_ITEM>
+						<ns1:KEY>$$ORDER_PAYLOAD_SOURCE$$</ns1:KEY>
+						<ns1:VALUE>TAS-P-TAS-P</ns1:VALUE>
+					</ns1:PROPERTIES_ITEM>
+				</ns1:PROPERTIES>
+				<ns1:DATA_CENTER_REGION_ID>US001</ns1:DATA_CENTER_REGION_ID>
+				<ns1:PROCESSING_DATE />
+				<ns1:LINE_ITEMS>
+					<ns1:LINE_ITEMS_ITEM>
+						<ns1:LINE_ID>1400106756</ns1:LINE_ID>
+						<ns1:SUBSCRIPTION_ID>2000602</ns1:SUBSCRIPTION_ID>
+						<ns1:START_DATE>2017-04-19T07:00:00</ns1:START_DATE>
+						<ns1:END_DATE>2020-04-18T07:00:00</ns1:END_DATE>
+						<ns1:OVERAGE_BILLED>Y</ns1:OVERAGE_BILLED>
+						<PROPERTIES xmlns:ns12="http://xmlns.oracle.com/properties"
+							xmlns="http://xmlns.oracle.com/properties">
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>RATE_CARD_ID</ns12:KEY>
+								<ns12:VALUE>918080</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>PROMOTION_INTENT_TO_PAY</ns12:KEY>
+								<ns12:VALUE>Y</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>OPERATIONAL_POLICY</ns12:KEY>
+								<ns12:VALUE>ENTERPRISE</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>OVERAGE_THRESHOLD</ns12:KEY>
+								<ns12:VALUE>0</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>OVERAGE_BILLING_TERM</ns12:KEY>
+								<ns12:VALUE>Overage Billed</ns12:VALUE>
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>PRODUCT_RELEASE_VERSION</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>ADDITIONAL_INSTANCE_PRODUCT_RELEASE_VERSION</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>ENVIRONMENT_LANGUAGES</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>LANGUAGE_CODES</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>IDM_TYPE</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>ENVIRONMENT_COUNTRY</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+							<ns12:PROPERTIES_ITEM>
+								<ns12:KEY>TAGS</ns12:KEY>
+								<ns12:VALUE />
+							</ns12:PROPERTIES_ITEM>
+						</PROPERTIES>
+						<ns1:SERVICE_GROUP_NAME>IAASCM</ns1:SERVICE_GROUP_NAME>
+						<ns1:SERVICE_COMPONENTS>
+							<ns1:SERVICE_COMPONENTS_ITEM>
+								<ns1:COMPONENT_ID>7506544</ns1:COMPONENT_ID>
+								<ns1:PROPERTIES>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>IS_ADDITIONAL_INSTANCE</ns1:KEY>
+										<ns1:VALUE>N</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>IS_BASE_SERVICE_COMPONENT</ns1:KEY>
+										<ns1:VALUE>Y</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>METRIC_NAME</ns1:KEY>
+										<ns1:VALUE>CURRENCY UNIT</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>CURRENCY UNIT</ns1:KEY>
+										<ns1:VALUE>3600</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+										<ns1:VALUE>Oracle IAAS Public Cloud Commitment</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+									<ns1:PROPERTIES_ITEM>
+										<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+										<ns1:VALUE>Oracle IAAS Public Cloud Commitment Product Bundle
+											v1
+										</ns1:VALUE>
+									</ns1:PROPERTIES_ITEM>
+								</ns1:PROPERTIES>
+								<ns1:SERVICE_COMPONENT_ID>B87779</ns1:SERVICE_COMPONENT_ID>
+								<ns1:LINE_ID>1400106756</ns1:LINE_ID>
+								<ns1:START_DATE>2017-04-19T07:00:00</ns1:START_DATE>
+								<ns1:END_DATE>2020-04-18T07:00:00</ns1:END_DATE>
+								<ns1:COMPONENTS>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506549</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87786</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Virtual Machine
+													Dense I/O - Metered - OCPU Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Virtual Machine
+													Dense I/O - Metered - OCPU Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506548</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PORT HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87783</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - FastConnect 1
+													Gbps - Metered - Port Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - FastConnect 1
+													Gbps - Metered - Port Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506547</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PORT HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87782</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - FastConnect 10
+													Gbps - Metered - Port Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - FastConnect 10
+													Gbps - Metered - Port Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506475</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87674</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud - Windows OS on Compute -
+													Metered - OCPU Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud - Windows OS on Compute -
+													Metered - OCPU Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506005</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LOAD BALANCER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87065</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - 400 Mbps Load
+													Balancer Capacity - Metered - Load Balancer Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - 400 Mbps Load
+													Balancer Capacity - Metered - Load Balancer Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506001</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE STORAGE CAPACITY PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87061</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Block Volumes -
+													Metered - Gigabyte Storage Capacity per Month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Block Volumes -
+													Metered - Gigabyte Storage Capacity per Month Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506004</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LOAD BALANCER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87064</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - 100 Mbps Load
+													Balancer Capacity - Metered - Load Balancer Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - 100 Mbps Load
+													Balancer Capacity - Metered - Load Balancer Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506000</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>10000 REQUESTS PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>10000</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87060</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Object Storage
+													- Requests - Metered - 10,000 Requests per Month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Object Storage
+													- Requests - Metered - 10,000 Requests per Month Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506002</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE OUTBOUND DATA TRANS PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87062</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Network -
+													Metered - Gigabyte Outbound Data Transfer per month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Network -
+													Metered - Gigabyte Outbound Data Transfer per month Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7506006</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LOAD BALANCER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B87066</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - 8000 Mbps Load
+													Balancer Capacity - Metered - Load Balancer Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - 8000 Mbps Load
+													Balancer Capacity - Metered - Load Balancer Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505866</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>VIRTUAL MACHINE IP PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86830</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Virtual Machine IP
+													- Metered - Virtual Machine IP Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Virtual Machine IP
+													- Metered - Virtual Machine IP Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505865</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE OUTBOUND DATA TRANS PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86829</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Network Outbound
+													Data Transfer - Metered - Gigabyte Outbound Data Transfer
+													Per Month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Network Outbound
+													Data Transfer - Metered - Gigabyte Outbound Data Transfer
+													Per Month Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505864</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE STORAGE CAPACITY PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86828</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Library Storage -
+													Metered - Gigabyte Storage Capacity Per Month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Library Storage -
+													Metered - Gigabyte Storage Capacity Per Month Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505863</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE STORAGE CAPACITY PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86827</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service- Volume Storage -
+													Metered - Gigabyte Storage Capacity Per Month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service- Volume Storage -
+													Metered - Gigabyte Storage Capacity Per Month Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505855</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86819</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Cost Optimized - Enterprise - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Cost Optimized - Enterprise - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505860</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86824</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Performance Optimized - Enterprise - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Performance Optimized - Enterprise - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505859</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86823</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Performance Optimized - Advanced - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Performance Optimized - Advanced - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505858</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86822</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Performance Optimized - Advanced - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Performance Optimized - Advanced - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505857</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86821</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Performance Optimized - Advanced - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Performance Optimized - Advanced - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505856</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86820</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Cost Optimized - Enterprise - Metered - Ravello Compute
+													Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Cost Optimized - Enterprise - Metered - Ravello Compute
+													Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505854</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86818</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Cost Optimized - Enterprise - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Cost Optimized - Enterprise - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505853</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86817</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Cost Optimized - Advanced - Metered - Ravello Compute
+													Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Cost Optimized - Advanced - Metered - Ravello Compute
+													Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505852</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86816</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Cost Optimized - Advanced - Metered - Ravello Compute
+													Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Cost Optimized - Advanced - Metered - Ravello Compute
+													Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505851</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86815</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Cost Optimized - Advanced - Metered - Ravello Compute
+													Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R1 - Cost Optimized - Advanced - Metered - Ravello Compute
+													Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505862</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86826</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Performance Optimized - Enterprise - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													M - Performance Optimized - Enterprise - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505861</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>RAVELLO COMPUTE HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86825</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Performance Optimized - Enterprise - Metered - Ravello
+													Compute Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Ravello Cloud Service - Compute Capacity -
+													R2 - Performance Optimized - Enterprise - Metered - Ravello
+													Compute Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505543</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86076</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Standard
+													Compute Capacity - Metered - OCPU Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Standard
+													Compute Capacity - Metered - OCPU Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505545</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86078</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Dense I/O
+													Compute Capacity - Metered - OCPU Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Dense I/O
+													Compute Capacity - Metered - OCPU Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505546</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86079</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Virtual Machine
+													Standard - Metered - OCPU Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Virtual Machine
+													Standard - Metered - OCPU Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505547</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>GIGABYTE STORAGE CAPACITY PER MONTH</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86080</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Object Storage
+													- Storage - Metered - Gigabyte Storage Capacity per Month
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - Object Storage
+													- Storage - Metered - Gigabyte Storage Capacity per Month
+													Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+									<ns1:COMPONENTS_ITEM>
+										<ns1:COMPONENT_ID>7505544</ns1:COMPONENT_ID>
+										<ns1:PROPERTIES>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>OCPU PER HOUR</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>PROVISIONED_PRODUCT</ns1:KEY>
+												<ns1:VALUE />
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>BLOCK_QUANTITY</ns1:KEY>
+												<ns1:VALUE>1</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_ID</ns1:KEY>
+												<ns1:VALUE>B86077</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>SERVICE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - High I/O
+													Compute Capacity - Metered - OCPU Per Hour
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+											<ns1:PROPERTIES_ITEM>
+												<ns1:KEY>LICENSE_PART_DESCRIPTION</ns1:KEY>
+												<ns1:VALUE>Oracle Bare Metal Cloud Service - High I/O
+													Compute Capacity - Metered - OCPU Per Hour Product
+												</ns1:VALUE>
+											</ns1:PROPERTIES_ITEM>
+										</ns1:PROPERTIES>
+									</ns1:COMPONENTS_ITEM>
+								</ns1:COMPONENTS>
+							</ns1:SERVICE_COMPONENTS_ITEM>
+						</ns1:SERVICE_COMPONENTS>
+					</ns1:LINE_ITEMS_ITEM>
+				</ns1:LINE_ITEMS>
+			</ns1:I_ORDER>
+		</ns1:InputParameters>
+	</soap:Body>
+</soap:Envelope>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BareMetal_OPCTest_MBE_Migration">
+	<parameter name="devUIurl" value="" />
+	<parameter name="cloudAdmurl" value="" />
+	<test name="BareMetal_Svc_Watchdog_OPCTest_Trial_login_logout"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.oracle.opc.automation.test.testcase.baremetal.BMAccounLifecycle2">
+				<methods>
+				
+					<include name="Create_BareMetal_IAAS_MBE_Account" />
+					<!-- <include name="Activate_BareMetal_IAAS_MBE_Account" /> -->
+                     <include name="Create_BareMetal_DB_MBE_Account" />
+					<include name="Activate_BareMetal_DB_MBE_Account" />
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	
+</suite>

@@ -1,0 +1,6 @@
+{
+    "shape": "100Mbps",
+    "vcn": "PAAS_VCN",
+    "display_name": "test_lb_2",
+    "compartment": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a"
+}

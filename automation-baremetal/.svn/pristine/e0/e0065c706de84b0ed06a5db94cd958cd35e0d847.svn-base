@@ -1,0 +1,11 @@
+{
+    "shape": "BM.Standard2.52",
+    "vcn": "PAAS_VCN",
+    "availability_domain" : "AD-2",
+    "display_name": "test_instance",
+    "os_name": "Oracle Linux",
+    "os_version": "7.5",
+    "ssh_key": "config/SSH_KEY",
+    "ocid": "ocid1.instance.region1.sea.abzwkljsbfkelyrxv2ojtljwujyuohslkjsu3ew2kilv23vy6sp42rgpib7a",
+    "compartment": "ocid1.tenancy.oc1..aaaaaaaa3py2q7r65yxbd2v7q4jtuzalmgentizisra4ipwei2mdehazja3a"
+}

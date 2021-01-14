@@ -1,0 +1,26 @@
+[
+   {
+       "name": "Account Creation",
+       "job_id": "1"
+   },
+   {
+       "name": "Account Termination",
+       "job_id": "2"
+   },
+   {
+       "name": "Account Suspend (Quota)",
+       "job_id": "3"
+   },
+   {
+       "name": "Account Resume (Quota)",
+       "job_id": "4"
+   },
+   {
+       "name": "Account Suspend (Fraud)",
+       "job_id": "5"
+   },
+   {
+       "name": "Account Resume (Fraud)",
+       "job_id": "6"
+   }
+]
